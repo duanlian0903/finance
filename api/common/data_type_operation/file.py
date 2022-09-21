@@ -7,16 +7,16 @@ import api.common.system.message as acsm
 import api.common.data_type_operation.check_data_type as acdtocdt
 
 
-def check_file_existence(file_name):  # tested
-    if acdtocdt.whether_string(file_name):
-        return os.path.isfile(file_name)
+def check_file_existence(file_path):  # tested
+    if acdtocdt.whether_string(file_path):
+        return os.path.isfile(file_path)
     else:
         return False
 
 
-def check_folder_existence(folder_name):  # tested
-    if acdtocdt.whether_string(folder_name):
-        return os.path.isdir(folder_name)
+def check_folder_existence(folder_path):  # tested
+    if acdtocdt.whether_string(folder_path):
+        return os.path.isdir(folder_path)
     else:
         return False
 
@@ -28,24 +28,51 @@ def copy_file(source_file_path, destine_file_path):  # tested
         acsm.show_fundamental_operation_exception_message('Fail to copy due to unexpected errors[' + str(source_file_path) + ', ' + str(destine_file_path) + '].')
 
 
-def delete_file(file_name):  # tested
-    if check_file_existence(file_name):
-        os.remove(file_name)
+def delete_file(file_path):  # tested
+    if check_file_existence(file_path):
+        os.remove(file_path)
 
 
-def generate_all_related_folders_in_the_path_of_a_given_file(file_name):  # tested
+def get_folder_path(file_path):
     try:
-        folder_list = file_name.split('/')[:-1]
-        current_path = '.'
-        if ':/' in file_name:
-            current_path = folder_list[0]
-            folder_list = folder_list[1:]
-        for folder in folder_list:
-            current_path = current_path + '/' + folder
-            if not check_folder_existence(current_path):
-                os.mkdir(current_path)
+        return file_path[:max(file_path.rfind('/'), file_path.rfind('\\'))]
     except:
-        acsm.show_exception_message('Fail to generate all the related folders due to unexpected errors.')
+        acsm.show_fundamental_operation_exception_message('Fail to get path information due to unexpected errors.')
+        return ''
+
+
+def make_all_related_folders(folder_path):
+    try:
+        os.makedirs(folder_path)
+    except:
+        acsm.show_fundamental_operation_exception_message('Fail to generate all the related folders due to unexpected errors.')
+
+
+def make_all_related_folders_for_a_given_file_path(file_path):
+    make_all_related_folders(get_folder_path(file_path))
+
+
+def delete_file_in_the_current_folder(folder_path):  # tested
+    try:
+        make_all_related_folders_for_a_given_file_path(folder_path + '/test.txt')
+        file_folder_list = os.listdir(folder_path)
+        for file_folder in file_folder_list:
+            file_name = folder_path + '/' + file_folder
+            delete_file(file_name)
+    except:
+        acsm.show_fundamental_operation_exception_message('Fail to delete files in the given folder level due to unexpected errors.')
+
+
+def delete_file_inside_folder(folder_path):  # tested
+    try:
+        delete_file_in_the_current_folder(folder_path)
+        file_folder_list = os.listdir(folder_path)
+        for file_folder in file_folder_list:
+            path = folder_path + '/' + file_folder
+            if check_folder_existence(path):
+                delete_file_inside_folder(path)
+    except:
+        acsm.show_fundamental_operation_exception_message('Fail to delete files insider all the sub-folders due to unexpected errors.')
 
 
 def read_file_into_list(file_name):
@@ -62,27 +89,6 @@ def read_file_into_list(file_name):
 
 
 '''
-def delete_file_in_the_current_folder(folder_name):  # tested
-    try:
-        generate_folder_for_file(folder_name+'/test.txt')
-        file_folder_list = os.listdir(folder_name)
-        for file_folder in file_folder_list:
-            file_name = folder_name+'/'+file_folder
-            delete_file(file_name)
-    except:
-        asm.show_exception_message('Fail to delete files in the given folder level due to unexpected errors.')
-
-
-def delete_file_inside_folder(folder_name):  # tested
-    try:
-        delete_file_in_the_current_folder(folder_name)
-        file_folder_list = os.listdir(folder_name)
-        for file_folder in file_folder_list:
-            path = folder_name + '/' + file_folder
-            if os.path.isdir(path):
-                delete_file_inside_folder(path)
-    except:
-        asm.show_exception_message('Fail to delete files insider all the subfolders due to unexpected errors.')
 
 
 def save_pickle_data(data, file_name, whether_save_csv=False):  # tested
