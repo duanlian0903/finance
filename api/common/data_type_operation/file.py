@@ -35,7 +35,12 @@ def delete_file(file_path):  # tested
 
 def get_folder_path(file_path):
     try:
-        return file_path[:max(file_path.rfind('/'), file_path.rfind('\\'))]
+        letter_index1 = file_path.rfind('/')
+        letter_index2 = file_path.rfind('\\')
+        if (letter_index1 == -1) & (letter_index2 == -1):
+            return ''
+        else:
+            return file_path[:max(letter_index1, letter_index2)]
     except:
         acsm.show_fundamental_operation_exception_message('Fail to get path information due to unexpected errors.')
         return ''
@@ -43,7 +48,8 @@ def get_folder_path(file_path):
 
 def make_all_related_folders(folder_path):
     try:
-        os.makedirs(folder_path)
+        if folder_path != '':
+            os.makedirs(folder_path)
     except:
         acsm.show_fundamental_operation_exception_message('Fail to generate all the related folders due to unexpected errors.')
 
@@ -75,21 +81,58 @@ def delete_file_inside_folder(folder_path):  # tested
         acsm.show_fundamental_operation_exception_message('Fail to delete files insider all the sub-folders due to unexpected errors.')
 
 
-def read_file_into_list(file_name):
+def read_file_into_list(file_path):
     try:
-        if acdtocdt.whether_string(file_name):
-            file = open(file_name)
+        if acdtocdt.whether_string(file_path):
+            file = open(file_path)
             lines = file.readlines()
             result = []
             for line in lines:
                 result.append(line[:-1])
             return result
         else:
-            acsm.show_fundamental_operation_exception_message('The file name passed is not a string ' + str(file_name))
+            acsm.show_fundamental_operation_exception_message('The file path passed is not a string ' + str(file_path))
             return []
     except:
         acsm.show_fundamental_operation_exception_message('Fail to read file due to unexpected errors.')
         return []
+
+
+def read_file_into_set(file_path):  # tested
+    return set(read_file_into_list(file_path))
+
+
+def load_json_file_as_dict(file_path):  # tested
+    try:
+        if check_file_existence(file_path):
+            result = json.load(open(file_path))
+        else:
+            acsm.show_fundamental_operation_exception_message('We will return an empty dictionary due to non-existing file:' + str(file_path))
+            result = {}
+    except:
+        acsm.show_fundamental_operation_exception_message('We will return an empty dictionary due to unexpected errors.')
+        result = {}
+    return result
+
+
+def save_dict_as_json_file(dict_data, file_path):  # tested
+    try:
+        make_all_related_folders_for_a_given_file_path(file_path)
+        json.dump(dict_data, open(file_path, 'w'))
+        content = open(file_path, 'r').read().replace(',', ',\n')
+        open(file_path, 'w').write(content)
+    except:
+        acsm.show_fundamental_operation_exception_message('We have unexpected errors to save json file: ' + str(file_path))
+
+
+def update_json_file(file_path, updating_dict_data):  # tested
+    json_dict = load_json_file_as_dict(file_path)
+    try:
+        for key in updating_dict_data:
+            json_dict[key] = updating_dict_data[key]
+    except:
+        acsm.show_fundamental_operation_exception_message('We have unexpected errors to update json file with dict ' + str(updating_dict_data))
+    save_dict_as_json_file(json_dict, file_path)
 
 
 '''
@@ -170,53 +213,6 @@ def save_excel_file(df, file_name):  # tested
         asm.show_exception_message('We have trouble saving excel file due to unexpected errors.')
 
 
-def get_item_set_from_file(file_name):  # tested
-    try:
-        item_list = []
-        if check_file_existence(file_name):
-            file = open(file_name)
-            lines = file.readlines()
-            for line in lines:
-                item_list.append(line[:-1])
-        else:
-            asm.show_exception_message('We will return an empty set due to non-existing file:' + str(file_name))
-        return set(item_list)
-    except:
-        asm.show_exception_message('We will return an empty set due to unexpected errors.')
-        return set()
-
-
-def load_json_file_as_dict(file_name):  # tested
-    try:
-        if check_file_existence(file_name):
-            result = json.load(open(file_name))
-        else:
-            asm.show_exception_message('We will return an empty dictionary due to non-existing file:' + str(file_name))
-            result = {}
-    except:
-        asm.show_exception_message('We will return an empty dictionary due to unexpected errors.')
-        result = {}
-    return result
-
-
-def save_dict_as_json_file(dict_data, file_name):  # tested
-    try:
-        generate_folder_for_file(file_name)
-        json.dump(dict_data, open(file_name, 'w'))
-        content = open(file_name, 'r').read().replace(',', ',\n')
-        open(file_name, 'w').write(content)
-    except:
-        asm.show_exception_message('We have unexpected errors to save json file: ' + str(file_name))
-
-
-def update_json_file(file_name, updating_dict_data):  # tested
-    json_dict = load_json_file_as_dict(file_name)
-    try:
-        for key in updating_dict_data:
-            json_dict[key] = updating_dict_data[key]
-    except:
-        asm.show_exception_message('We have unexpected errors to update json file with dict ' + str(updating_dict_data))
-    save_dict_as_json_file(json_dict, file_name)
 
 
 def generate_summary_df_in_the_folder(folder_name):  # tested
