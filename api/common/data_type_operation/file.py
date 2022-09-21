@@ -48,6 +48,17 @@ def generate_all_related_folders_in_the_path_of_a_given_file(file_name):  # test
         acsm.show_exception_message('Fail to generate all the related folders due to unexpected errors.')
 
 
+def read_file_into_list(file_name):
+    try:
+        if acdtocdt.whether_string(file_name):
+            file = open(file_name)
+            return file.readlines()
+        else:
+            acsm.show_fundamental_operation_exception_message('The file name passed is not a string ' + str(file_name))
+            return []
+    except:
+        acsm.show_fundamental_operation_exception_message('Fail to read file due to unexpected errors.')
+        return []
 
 
 '''
