@@ -1,8 +1,8 @@
+import json
+import pandas as pd
 import pickle
 import os
 import shutil
-import pandas as pd
-import json
 import api.common.system.message as acsm
 import api.common.data_type_operation.check_data_type as acdtocdt
 
@@ -79,7 +79,11 @@ def read_file_into_list(file_name):
     try:
         if acdtocdt.whether_string(file_name):
             file = open(file_name)
-            return file.readlines()
+            lines = file.readlines()
+            result = []
+            for line in lines:
+                result.append(line[:-1])
+            return result
         else:
             acsm.show_fundamental_operation_exception_message('The file name passed is not a string ' + str(file_name))
             return []

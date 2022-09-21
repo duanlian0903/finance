@@ -1,3 +1,6 @@
+import pandas as pd
+
+
 def whether_boolean(variable):
     return isinstance(variable, bool)
 
@@ -40,3 +43,11 @@ def whether_frozenset(variable):
 
 def whether_dict(variable):
     return isinstance(variable, dict)
+
+
+def whether_pandas_dataframe(variable):
+    return isinstance(variable, pd.DataFrame)
+
+
+def whether_pandas_series(variable):
+    return isinstance(variable, pd.Series)
