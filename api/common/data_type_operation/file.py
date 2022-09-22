@@ -1,7 +1,7 @@
 import json
+import os
 import pandas as pd
 import pickle
-import os
 import shutil
 import api.common.system.message as acsm
 import api.common.data_type_operation.check_data_type as acdtocdt
@@ -81,7 +81,7 @@ def delete_file_inside_folder(folder_path):  # tested
         acsm.show_fundamental_operation_exception_message('Fail to delete files insider all the sub-folders due to unexpected errors.')
 
 
-def read_file_into_list(file_path):
+def load_txt_file_as_list(file_path):
     try:
         if acdtocdt.whether_string(file_path):
             file = open(file_path)
@@ -98,8 +98,8 @@ def read_file_into_list(file_path):
         return []
 
 
-def read_file_into_set(file_path):  # tested
-    return set(read_file_into_list(file_path))
+def load_txt_file_as_set(file_path):  # tested
+    return set(load_txt_file_as_list(file_path))
 
 
 def load_json_file_as_dict(file_path):  # tested
@@ -135,67 +135,61 @@ def update_json_file(file_path, updating_dict_data):  # tested
     save_dict_as_json_file(json_dict, file_path)
 
 
-'''
-
-
-def save_pickle_data(data, file_name, whether_save_csv=False):  # tested
+def load_csv_file_as_pandas_dataframe(file_path, sep=','):
     try:
-        if isinstance(file_name, str):
-            generate_folder_for_file(file_name)
-            pickle_file = open(file_name, 'wb')
+        return pd.read_csv(file_path, sep=sep)
+    except:
+        acsm.show_fundamental_operation_exception_message('We have unexpected errors to load pandas dataframe from csv file ' + str(file_path))
+        return pd.DataFrame([])
+
+
+def save_pickle_data(data, file_path, whether_save_csv=False):  # tested
+    try:
+        if acdtocdt.whether_string(file_path):
+            make_all_related_folders_for_a_given_file_path(file_path)
+            pickle_file = open(file_path, 'wb')
             pickle.dump(data, pickle_file)
             pickle_file.close()
             if whether_save_csv:
-                if isinstance(data, pd.DataFrame):
-                    data.to_csv(file_name+'.csv')
+                if acdtocdt.whether_pandas_dataframe(data):
+                    data.to_csv(file_path + '.csv')
                 else:
-                    asm.show_exception_message('We have trouble saving ' + str(file_name) + '.csv because the variable is not a dataframe.')
+                    acsm.show_fundamental_operation_exception_message('We have trouble saving ' + str(file_path) + '.csv because the variable is not a dataframe.')
         else:
-            asm.show_exception_message('We have trouble saving ' + str(file_name) + '.csv because the file name is not a string.')
+            acsm.show_fundamental_operation_exception_message('We have trouble saving ' + str(file_path) + '.csv because the file name is not a string.')
     except:
-        asm.show_exception_message('We have trouble saving ' + str(file_name) + '.csv due to unexpected errors.')
+        acsm.show_fundamental_operation_exception_message('We have trouble saving ' + str(file_path) + '.csv due to unexpected errors.')
 
 
-def load_pickle_data(file_name):  # tested
-    pickle_data = pd.DataFrame([])
-    try:
-        if isinstance(file_name, str):
-            if check_file_existence(file_name):
-                pickle_file = open(file_name, 'rb')
-                pickle_data = pickle.load(pickle_file)
-                pickle_file.close()
-            else:
-                asm.show_exception_message('We will return a null dataframe due to non-existing file:' + str(file_name))
-        else:
-            asm.show_exception_message('We will return a null dataframe because the file name is not a string.')
-    except:
-        asm.show_exception_message('We will return a null dataframe due to unexpected errors.')
-    return pickle_data
-
-
-def load_pickle_data_dict(file_name):  # tested
+def load_pickle_data_as_dict(file_path):  # tested
     data = pd.DataFrame([])
     whether_has_file = False
     try:
-        if isinstance(file_name, str):
-            if check_file_existence(file_name):
-                data = load_pickle_data(file_name)
+        if acdtocdt.whether_string(file_path):
+            if check_file_existence(file_path):
                 whether_has_file = True
+                pickle_file = open(file_path, 'rb')
+                data = pickle.load(pickle_file)
+                pickle_file.close()
             else:
-                asm.show_exception_message('We will return False value due to non-existing file: '+str(file_name))
+                acsm.show_fundamental_operation_exception_message('We will return False value due to non-existing file: ' + str(file_path))
         else:
-            asm.show_exception_message('We will return False value because the file name is not a string.')
+            acsm.show_fundamental_operation_exception_message('We will return False value because the file name is not a string.')
     except:
-        asm.show_exception_message('We will return False value due to unexpected errors.')
+        acsm.show_fundamental_operation_exception_message('We will return empty dataframe due to unexpected errors.')
     return {'whether_has_file': whether_has_file, 'data': data}
 
 
-def save_excel_file(df, file_name):  # tested
+def load_pickle_data(file_path):  # tested
+    return load_pickle_data_as_dict(file_path)['data']
+
+
+def save_excel_file(df, file_path):  # tested
     try:
-        if isinstance(file_name, str):
-            if isinstance(df, pd.DataFrame):
-                generate_folder_for_file(file_name)
-                writer = pd.ExcelWriter(file_name+'.xlsx', engine='xlsxwriter')
+        if acdtocdt.whether_string(file_path):
+            if acdtocdt.whether_pandas_dataframe(df):
+                make_all_related_folders_for_a_given_file_path(file_path)
+                writer = pd.ExcelWriter(file_path + '.xlsx', engine='xlsxwriter')
                 df.to_excel(writer, sheet_name='sheet1')
                 workbook = writer.book
                 worksheet = writer.sheets['sheet1']
@@ -206,15 +200,14 @@ def save_excel_file(df, file_name):  # tested
                     worksheet.write(0, col_num+1, value, header_format)
                 writer.save()
             else:
-                asm.show_exception_message('We have trouble saving excel file because the variable is not a dataframe.')
+                acsm.show_fundamental_operation_exception_message('We have trouble saving excel file because the variable is not a dataframe.')
         else:
-            asm.show_exception_message('We have trouble saving excel file because the file name is not a string.')
+            acsm.show_fundamental_operation_exception_message('We have trouble saving excel file because the file name is not a string.')
     except:
-        asm.show_exception_message('We have trouble saving excel file due to unexpected errors.')
+        acsm.show_fundamental_operation_exception_message('We have trouble saving excel file due to unexpected errors.')
 
 
-
-
+'''
 def generate_summary_df_in_the_folder(folder_name):  # tested
     try:
         file_folder_list = os.listdir(folder_name)
