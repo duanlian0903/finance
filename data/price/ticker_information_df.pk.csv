@@ -1,0 +1,749 @@
+Symbol,Whether ETF,Company Name,Exchange Market Place
+A,False,"Agilent Technologies, Inc. Common Stock",nyse
+AAL,False,"American Airlines Group, Inc. - Common Stock",nasdaq
+AAP,False,Advance Auto Parts Inc.,nyse
+AAPL,False,Apple Inc. - Common Stock,nasdaq
+ABBV,False,AbbVie Inc. Common Stock,nyse
+ABC,False,AmerisourceBergen Corporation Common Stock,nyse
+ABNB,False,"Airbnb, Inc. - Class A Common Stock",nasdaq
+ABT,False,Abbott Laboratories Common Stock,nyse
+ACGL,False,Arch Capital Group Ltd. - Common Stock,nasdaq
+ACI,False,"Albertsons Companies, Inc. Class A Common Stock",nyse
+ACN,False,Accenture plc Class A Ordinary Shares (Ireland),nyse
+ADBE,False,Adobe Inc. - Common Stock,nasdaq
+ADI,False,"Analog Devices, Inc. - Common Stock",nasdaq
+ADM,False,Archer-Daniels-Midland Company Common Stock,nyse
+ADP,False,"Automatic Data Processing, Inc. - Common Stock",nasdaq
+ADSK,False,"Autodesk, Inc. - Common Stock",nasdaq
+AEE,False,Ameren Corporation Common Stock,nyse
+AEM,False,Agnico Eagle Mines Limited Common Stock,nyse
+AEP,False,"American Electric Power Company, Inc. - Common Stock",nasdaq
+AES,False,The AES Corporation Common Stock,nyse
+AFL,False,AFLAC Incorporated Common Stock,nyse
+AFRM,False,"Affirm Holdings, Inc. - Class A Common Stock",nasdaq
+AGG,True,iShares Core U.S. Aggregate Bond ETF,nysearca
+AIG,False,"American International Group, Inc. New Common Stock",nyse
+AIZ,False,"Assurant, Inc. Common Stock",nyse
+AJG,False,Arthur J. Gallagher & Co. Common Stock,nyse
+AKAM,False,"Akamai Technologies, Inc. - Common Stock",nasdaq
+ALB,False,Albemarle Corporation Common Stock,nyse
+ALGN,False,"Align Technology, Inc. - Common Stock",nasdaq
+ALK,False,"Alaska Air Group, Inc. Common Stock",nyse
+ALL,False,Allstate Corporation (The) Common Stock,nyse
+ALLE,False,Allegion plc Ordinary Shares,nyse
+ALLY,False,Ally Financial Inc. Common Stock,nyse
+AMAT,False,"Applied Materials, Inc. - Common Stock",nasdaq
+AMCR,False,Amcor plc Ordinary Shares,nyse
+AMD,False,"Advanced Micro Devices, Inc. - Common Stock",nasdaq
+AME,False,"AMETEK, Inc.",nyse
+AMGN,False,Amgen Inc. - Common Stock,nasdaq
+AMP,False,"Ameriprise Financial, Inc. Common Stock",nyse
+AMT,False,American Tower Corporation (REIT) Common Stock,nyse
+AMTD,False,"AMTD IDEA Group American Depositary Shares, each representing two Class A Ordinary Shares",nyse
+AMZN,False,"Amazon.com, Inc. - Common Stock",nasdaq
+AN,False,"AutoNation, Inc. Common Stock",nyse
+ANET,False,"Arista Networks, Inc. Common Stock",nyse
+ANSS,False,"ANSYS, Inc. - Common Stock",nasdaq
+AON,False,Aon plc Class A Ordinary Shares (Ireland),nyse
+AOS,False,A.O. Smith Corporation Common Stock,nyse
+APA,False,APA Corporation - Common Stock,nasdaq
+APD,False,"Air Products and Chemicals, Inc. Common Stock",nyse
+APH,False,Amphenol Corporation Common Stock,nyse
+APO,False,"Apollo Global Management, Inc. (New) Common Stock",nyse
+APTV,False,Aptiv PLC Ordinary Shares,nyse
+AR,False,Antero Resources Corporation Common Stock,nyse
+ARE,False,"Alexandria Real Estate Equities, Inc. Common Stock",nyse
+ARKK,True,ARK Innovation ETF,nysearca
+ASML,False,ASML Holding N.V. - New York Registry Shares,nasdaq
+ATO,False,Atmos Energy Corporation Common Stock,nyse
+ATR,False,"AptarGroup, Inc. Common Stock",nyse
+ATUS,False,"Altice USA, Inc. Class A Common Stock",nyse
+ATVI,False,"Activision Blizzard, Inc - Common Stock",nasdaq
+AVB,False,"AvalonBay Communities, Inc. Common Stock",nyse
+AVGO,False,Broadcom Inc. - Common Stock,nasdaq
+AVTR,False,"Avantor, Inc. Common Stock",nyse
+AVY,False,Avery Dennison Corporation Common Stock,nyse
+AWK,False,"American Water Works Company, Inc. Common Stock",nyse
+AXP,False,American Express Company Common Stock,nyse
+AYX,False,"Alteryx, Inc. Class A Common Stock",nyse
+AZN,False,AstraZeneca PLC - American Depositary Shares,nasdaq
+AZO,False,"AutoZone, Inc. Common Stock",nyse
+BA,False,Boeing Company (The) Common Stock,nyse
+BABA,False,Alibaba Group Holding Limited American Depositary Shares each representing eight Ordinary share,nyse
+BAC,False,Bank of America Corporation Common Stock,nyse
+BALL,False,Ball Corporation Common Stock,nyse
+BAM,False,Brookfield Asset Management Inc Class A Limited Voting Shares,nyse
+BAX,False,Baxter International Inc. Common Stock,nyse
+BBD,False,Banco Bradesco Sa American Depositary Shares,nyse
+BBWI,False,"Bath & Body Works, Inc.",nyse
+BBY,False,"Best Buy Co., Inc. Common Stock",nyse
+BCE,False,"BCE, Inc. Common Stock",nyse
+BDX,False,"Becton, Dickinson and Company Common Stock",nyse
+BEKE,False,KE Holdings Inc American Depositary Shares (each representing three Class A Ordinary Shares),nyse
+BEN,False,"Franklin Resources, Inc. Common Stock",nyse
+BG,False,Bunge Limited Bunge Limited,nyse
+BHP,False,BHP Group Limited American Depositary Shares (Each representing two Ordinary Shares),nyse
+BIDU,False,"Baidu, Inc. - American Depositary Shares, each representing 8 ordinary share",nasdaq
+BIIB,False,Biogen Inc. - Common Stock,nasdaq
+BILI,False,Bilibili Inc. - American Depositary Shares,nasdaq
+BILL,False,"Bill.com Holdings, Inc. Common Stock",nyse
+BIO,False,"Bio-Rad Laboratories, Inc. Class A Common Stock",nyse
+BJ,False,"BJ's Wholesale Club Holdings, Inc. Common Stock",nyse
+BK,False,The Bank of New York Mellon Corporation Common Stock,nyse
+BKNG,False,Booking Holdings Inc. - Common Stock,nasdaq
+BKR,False,Baker Hughes Company - Common Stock,nasdaq
+BLDR,False,"Builders FirstSource, Inc. Common Stock",nyse
+BLK,False,"BlackRock, Inc. Common Stock",nyse
+BMY,False,Bristol-Myers Squibb Company Common Stock,nyse
+BN,False,Brookfield Corporation Class A Limited Voting Shares,nyse
+BNS,False,Bank Nova Scotia Halifax Pfd 3 Ordinary Shares,nyse
+BNTX,False,BioNTech SE - American Depositary Shares,nasdaq
+BOTZ,True,Global X Robotics & Artificial Intelligence ETF,nasdaq
+BP,False,BP p.l.c. Common Stock,nyse
+BR,False,"Broadridge Financial Solutions, Inc. Common Stock",nyse
+BRO,False,"Brown & Brown, Inc. Common Stock",nyse
+BSX,False,Boston Scientific Corporation Common Stock,nyse
+BTI,False,"British American Tobacco  Industries, p.l.c. Common Stock ADR",nyse
+BUD,False,Anheuser-Busch Inbev SA Sponsored ADR (Belgium),nyse
+BWA,False,BorgWarner Inc. Common Stock,nyse
+BX,False,Blackstone Inc. Common Stock,nyse
+BXP,False,"Boston Properties, Inc. Common Stock",nyse
+C,False,"Citigroup, Inc. Common Stock",nyse
+CAG,False,"ConAgra Brands, Inc. Common Stock",nyse
+CAH,False,"Cardinal Health, Inc. Common Stock",nyse
+CAR,False,"Avis Budget Group, Inc. - Common Stock",nasdaq
+CARR,False,Carrier Global Corporation Common Stock ,nyse
+CAT,False,"Caterpillar, Inc. Common Stock",nyse
+CB,False,Chubb Limited  Common Stock,nyse
+CBOE,False,"Cboe Global Markets, Inc. Common Stock",bats
+CBRE,False,CBRE Group Inc Common Stock Class A,nyse
+CCI,False,Crown Castle Inc. Common Stock,nyse
+CCJ,False,Cameco Corporation Common Stock,nyse
+CCL,False,Carnival Corporation Common Stock,nyse
+CDAY,False,Ceridian HCM Holding Inc. Common Stock,nyse
+CDNS,False,"Cadence Design Systems, Inc. - Common Stock",nasdaq
+CDW,False,CDW Corporation - Common Stock,nasdaq
+CE,False,Celanese Corporation Celanese Corporation Common Stock,nyse
+CEG,False,Constellation Energy Corporation - Common Stock,nasdaq
+CF,False,"CF Industries Holdings, Inc. Common Stock",nyse
+CFG,False,"Citizens Financial Group, Inc. Common Stock",nyse
+CGC,False,Canopy Growth Corporation - Common Shares,nasdaq
+CHD,False,"Church & Dwight Company, Inc. Common Stock",nyse
+CHK,False,Chesapeake Energy Corporation - Common Stock,nasdaq
+CHKP,False,Check Point Software Technologies Ltd. - Ordinary Shares,nasdaq
+CHRW,False,"C.H. Robinson Worldwide, Inc. - Common Stock",nasdaq
+CHTR,False,"Charter Communications, Inc. - Class A Common Stock",nasdaq
+CHWY,False,"Chewy, Inc. Class A Common Stock",nyse
+CI,False,Cigna Corporation Common Stock,nyse
+CINF,False,Cincinnati Financial Corporation - Common Stock,nasdaq
+CL,False,Colgate-Palmolive Company Common Stock,nyse
+CLX,False,Clorox Company (The) Common Stock,nyse
+CMA,False,Comerica Incorporated Common Stock,nyse
+CMCSA,False,Comcast Corporation - Class A Common Stock,nasdaq
+CME,False,CME Group Inc. - Class A Common Stock,nasdaq
+CMG,False,"Chipotle Mexican Grill, Inc. Common Stock",nyse
+CMI,False,Cummins Inc. Common Stock,nyse
+CMS,False,CMS Energy Corporation Common Stock,nyse
+CNC,False,Centene Corporation Common Stock,nyse
+CNI,False,Canadian National Railway Company Common Stock,nyse
+CNK,False,"Cinemark Holdings Inc Cinemark Holdings, Inc. Common Stock",nyse
+CNP,False,"CenterPoint Energy, Inc (Holding Co) Common Stock",nyse
+CNQ,False,Canadian Natural Resources Limited Common Stock,nyse
+COF,False,Capital One Financial Corporation Common Stock,nyse
+COIN,False,"Coinbase Global, Inc. - Class A Common Stock",nasdaq
+COO,False,"The Cooper Companies, Inc. Common Stock",nyse
+COP,False,ConocoPhillips Common Stock,nyse
+COST,False,Costco Wholesale Corporation - Common Stock,nasdaq
+COUP,False,Coupa Software Incorporated - Common Stock,nasdaq
+CP,False,Canadian Pacific Railway Limited Common Stock,nyse
+CPB,False,Campbell Soup Company Common Stock,nyse
+CPNG,False,"Coupang, Inc. Class A Common Stock",nyse
+CPRT,False,"Copart, Inc. - Common Stock",nasdaq
+CPT,False,Camden Property Trust Common Stock,nyse
+CRL,False,"Charles River Laboratories International, Inc. Common Stock",nyse
+CRM,False,"Salesforce, Inc. Common Stock",nyse
+CRWD,False,"CrowdStrike Holdings, Inc. - Class A Common Stock",nasdaq
+CSCO,False,"Cisco Systems, Inc. - Common Stock",nasdaq
+CSGP,False,"CoStar Group, Inc. - Common Stock",nasdaq
+CSL,False,Carlisle Companies Incorporated Common Stock,nyse
+CSX,False,CSX Corporation - Common Stock,nasdaq
+CTAS,False,Cintas Corporation - Common Stock,nasdaq
+CTLT,False,"Catalent, Inc. Common Stock",nyse
+CTRA,False,Coterra Energy Inc. Common Stock,nyse
+CTSH,False,Cognizant Technology Solutions Corporation - Class A Common Stock,nasdaq
+CTVA,False,"Corteva, Inc. Common Stock ",nyse
+CURE,True,Direxion Daily Healthcare Bull 3X Shares,nysearca
+CVE,False,Cenovus Energy Inc Common Stock,nyse
+CVS,False,CVS Health Corporation Common Stock,nyse
+CVX,False,Chevron Corporation Common Stock,nyse
+CZR,False,"Caesars Entertainment, Inc. - Common Stock",nasdaq
+D,False,"Dominion Energy, Inc. Common Stock",nyse
+DAL,False,"Delta Air Lines, Inc. Common Stock",nyse
+DAR,False,Darling Ingredients Inc. Common Stock,nyse
+DASH,False,"DoorDash, Inc. Class A Common Stock",nyse
+DD,False,"DuPont de Nemours, Inc. Common Stock",nyse
+DDOG,False,"Datadog, Inc. - Class A Common Stock",nasdaq
+DE,False,Deere & Company Common Stock,nyse
+DELL,False,Dell Technologies Inc. Class C Common Stock ,nyse
+DEO,False,Diageo plc Common Stock,nyse
+DFEN,True,Direxion Daily Aerospace & Defense Bull 3X Shares,nysearca
+DFS,False,Discover Financial Services Common Stock,nyse
+DG,False,Dollar General Corporation Common Stock,nyse
+DGX,False,Quest Diagnostics Incorporated Common Stock,nyse
+DHI,False,"D.R. Horton, Inc. Common Stock",nyse
+DHR,False,Danaher Corporation Common Stock,nyse
+DIA,True,SPDR Dow Jones Industrial Average ETF,nysearca
+DINO,False,HF Sinclair Corporation Common Stock,nyse
+DIS,False,Walt Disney Company (The) Common Stock,nyse
+DISH,False,DISH Network Corporation - Class A Common Stock,nasdaq
+DKNG,False,DraftKings Inc. - Class A Common Stock,nasdaq
+DLR,False,"Digital Realty Trust, Inc. Common Stock",nyse
+DLTR,False,"Dollar Tree, Inc. - Common Stock",nasdaq
+DOCU,False,"DocuSign, Inc. - Common Stock",nasdaq
+DOV,False,Dover Corporation Common Stock,nyse
+DOW,False,Dow Inc. Common Stock ,nyse
+DPZ,False,Domino's Pizza Inc Common Stock,nyse
+DRI,False,"Darden Restaurants, Inc. Common Stock",nyse
+DRN,True,Direxion Daily Real Estate Bull 3X Shares,nysearca
+DTE,False,DTE Energy Company Common Stock,nyse
+DUK,False,Duke Energy Corporation (Holding Company) Common Stock,nyse
+DUSL,True,Direxion Daily Industrials Bull 3X Shares,nysearca
+DVA,False,DaVita Inc. Common Stock,nyse
+DVN,False,Devon Energy Corporation Common Stock,nyse
+DXC,False,DXC Technology Company Common Stock ,nyse
+DXCM,False,"DexCom, Inc. - Common Stock",nasdaq
+EA,False,Electronic Arts Inc. - Common Stock,nasdaq
+EBAY,False,eBay Inc. - Common Stock,nasdaq
+ECL,False,Ecolab Inc. Common Stock,nyse
+ED,False,"Consolidated Edison, Inc. Common Stock",nyse
+EFX,False,"Equifax, Inc. Common Stock",nyse
+EIX,False,Edison International Common Stock,nyse
+EL,False,"Estee Lauder Companies, Inc. (The) Common Stock",nyse
+ELV,False,"Elevance Health, Inc. Common Stock",nyse
+EMN,False,Eastman Chemical Company Common Stock,nyse
+EMR,False,Emerson Electric Company Common Stock,nyse
+ENB,False,Enbridge Inc Common Stock,nyse
+ENPH,False,"Enphase Energy, Inc. - Common Stock",nasdaq
+ENTG,False,"Entegris, Inc. - Common Stock",nasdaq
+EOG,False,"EOG Resources, Inc. Common Stock",nyse
+EPAM,False,"EPAM Systems, Inc. Common Stock",nyse
+EPD,False,Enterprise Products Partners L.P. Common Stock,nyse
+EQIX,False,"Equinix, Inc. - Common Stock",nasdaq
+EQNR,False,Equinor ASA,nyse
+EQR,False,Equity Residential Common Shares of Beneficial Interest,nyse
+EQT,False,EQT Corporation Common Stock,nyse
+ERX,True,Direxion Energy Bull 2X Shares,nysearca
+ES,False,Eversource Energy (D/B/A) Common Stock,nyse
+ESS,False,"Essex Property Trust, Inc. Common Stock",nyse
+ET,False,Energy Transfer LP Common Units ,nyse
+ETN,False,"Eaton Corporation, PLC Ordinary Shares",nyse
+ETR,False,Entergy Corporation Common Stock,nyse
+ETSY,False,"Etsy, Inc. - Common Stock",nasdaq
+EVRG,False,"Evergy, Inc. - Common Stock",nasdaq
+EW,False,Edwards Lifesciences Corporation Common Stock,nyse
+EXAS,False,Exact Sciences Corporation - Common Stock,nasdaq
+EXC,False,Exelon Corporation - Common Stock,nasdaq
+EXPD,False,"Expeditors International of Washington, Inc. - Common Stock",nasdaq
+EXPE,False,"Expedia Group, Inc. - Common Stock",nasdaq
+EXR,False,Extra Space Storage Inc Common Stock,nyse
+F,False,Ford Motor Company Common Stock,nyse
+FANG,False,"Diamondback Energy, Inc. - Common Stock",nasdaq
+FAS,True,Direxion Financial Bull 3X Shares,nysearca
+FAST,False,Fastenal Company - Common Stock,nasdaq
+FBIN,False,"Fortune Brands Innovations, Inc. Common Stock",nyse
+FCX,False,"Freeport-McMoRan, Inc. Common Stock",nyse
+FDS,False,FactSet Research Systems Inc. Common Stock,nyse
+FDX,False,FedEx Corporation Common Stock,nyse
+FE,False,FirstEnergy Corp. Common Stock,nyse
+FFIV,False,"F5, Inc. - Common Stock",nasdaq
+FIS,False,"Fidelity National Information Services, Inc. Common Stock",nyse
+FISV,False,"Fiserv, Inc. - Common Stock",nasdaq
+FITB,False,Fifth Third Bancorp - Common Stock,nasdaq
+FIVN,False,"Five9, Inc. - Common Stock",nasdaq
+FLT,False,"FleetCor Technologies, Inc. Common Stock",nyse
+FMC,False,FMC Corporation Common Stock,nyse
+FMS,False,Fresenius Medical Care AG Common Stock,nyse
+FND,False,"Floor & Decor Holdings, Inc. Common Stock",nyse
+FNF,False,"FNF Group of Fidelity National Financial, Inc. Common Stock",nyse
+FOX,False,Fox Corporation - Class B Common Stock,nasdaq
+FOXA,False,Fox Corporation - Class A Common Stock,nasdaq
+FRC,False,FIRST REPUBLIC BANK Common Stock,nyse
+FRT,False,Federal Realty Investment Trust Common Stock,nyse
+FSLR,False,"First Solar, Inc. - Common Stock",nasdaq
+FTNT,False,"Fortinet, Inc. - Common Stock",nasdaq
+FTV,False,Fortive Corporation Common Stock ,nyse
+FUTU,False,Futu Holdings Limited - American Depositary Shares,nasdaq
+GD,False,General Dynamics Corporation Common Stock,nyse
+GE,False,General Electric Company Common Stock,nyse
+GEHC,False,GE HealthCare Technologies Inc. - Common Stock,nasdaq
+GEN,False,Gen Digital Inc. - Common Stock,nasdaq
+GFS,False,GlobalFoundries Inc. - Ordinary Share,nasdaq
+GILD,False,"Gilead Sciences, Inc. - Common Stock",nasdaq
+GIS,False,"General Mills, Inc. Common Stock",nyse
+GL,False,Globe Life Inc. Common Stock,nyse
+GLW,False,Corning Incorporated Common Stock,nyse
+GM,False,General Motors Company Common Stock,nyse
+GNRC,False,Generac Holdlings Inc. Common Stock,nyse
+GOLD,False,Barrick Gold Corporation Common Stock (BC),nyse
+GOOG,False,Alphabet Inc. - Class C Capital Stock,nasdaq
+GOOGL,False,Alphabet Inc. - Class A Common Stock,nasdaq
+GPC,False,Genuine Parts Company Common Stock,nyse
+GPN,False,Global Payments Inc. Common Stock,nyse
+GRMN,False,Garmin Ltd. Common Stock (Switzerland),nyse
+GS,False,"Goldman Sachs Group, Inc. (The) Common Stock",nyse
+GSK,False,GSK plc American Depositary Shares (Each representing two Ordinary Shares),nyse
+GTLS,False,"Chart Industries, Inc. Common Stock",nyse
+GWRE,False,"Guidewire Software, Inc. Common Stock",nyse
+GWW,False,"W.W. Grainger, Inc. Common Stock",nyse
+HAL,False,Halliburton Company Common Stock,nyse
+HAS,False,"Hasbro, Inc. - Common Stock",nasdaq
+HBAN,False,Huntington Bancshares Incorporated - Common Stock,nasdaq
+HCA,False,"HCA Healthcare, Inc. Common Stock",nyse
+HD,False,"Home Depot, Inc. (The) Common Stock",nyse
+HDB,False,HDFC Bank Limited Common Stock,nyse
+HES,False,Hess Corporation Common Stock,nyse
+HIG,False,"Hartford Financial Services Group, Inc. (The) Common Stock",nyse
+HII,False,"Huntington Ingalls Industries, Inc. Common Stock",nyse
+HLT,False,Hilton Worldwide Holdings Inc. Common Stock ,nyse
+HOLX,False,"Hologic, Inc. - Common Stock",nasdaq
+HON,False,Honeywell International Inc. - Common Stock,nasdaq
+HOOD,False,"Robinhood Markets, Inc. - Class A Common Stock",nasdaq
+HPE,False,Hewlett Packard Enterprise Company Common Stock,nyse
+HPQ,False,HP Inc. Common Stock,nyse
+HRL,False,Hormel Foods Corporation Common Stock,nyse
+HSBC,False,"HSBC Holdings, plc. Common Stock",nyse
+HSIC,False,"Henry Schein, Inc. - Common Stock",nasdaq
+HST,False,Host Hotels  - Common Stock,nasdaq
+HSY,False,The Hershey Company Common Stock,nyse
+HUBS,False,"HubSpot, Inc. Common Stock",nyse
+HUM,False,Humana Inc. Common Stock,nyse
+HWM,False,Howmet Aerospace Inc. Common Stock,nyse
+IAU,True,iShares Gold Trust Shares of the iShares Gold Trust,nysearca
+IBB,True,iShares Biotechnology ETF,nasdaq
+IBM,False,International Business Machines Corporation Common Stock,nyse
+IBN,False,ICICI Bank Limited Common Stock,nyse
+ICE,False,Intercontinental Exchange Inc. Common Stock,nyse
+ICLR,False,ICON plc - Ordinary Shares,nasdaq
+IDXX,False,"IDEXX Laboratories, Inc. - Common Stock",nasdaq
+IEX,False,IDEX Corporation Common Stock,nyse
+IFF,False,"International Flavors & Fragrances, Inc. Common Stock",nyse
+IHI,True,iShares U.S. Medical Devices ETF,nysearca
+ILMN,False,"Illumina, Inc. - Common Stock",nasdaq
+INCY,False,Incyte Corporation - Common Stock,nasdaq
+INTC,False,Intel Corporation - Common Stock,nasdaq
+INTU,False,Intuit Inc. - Common Stock,nasdaq
+INVH,False,Invitation Homes Inc. Common Stock,nyse
+IP,False,International Paper Company Common Stock,nyse
+IPG,False,"Interpublic Group of Companies, Inc. (The) Common Stock",nyse
+IQ,False,"iQIYI, Inc. - American Depositary Shares",nasdaq
+IQV,False,"IQVIA Holdings, Inc. Common Stock",nyse
+IR,False,Ingersoll Rand Inc. Common Stock,nyse
+IRM,False,Iron Mountain Incorporated (Delaware)Common Stock REIT,nyse
+ISRG,False,"Intuitive Surgical, Inc. - Common Stock",nasdaq
+IT,False,"Gartner, Inc. Common Stock",nyse
+ITA,True,iShares U.S. Aerospace & Defense ETF,bats
+ITUB,False,Itau Unibanco Banco Holding SA American Depositary Shares (Each repstg 500 Preferred shares),nyse
+ITW,False,Illinois Tool Works Inc. Common Stock,nyse
+IVV,True,iShares Core S&P 500 ETF,nysearca
+IVZ,False,Invesco Ltd Common Stock,nyse
+J,False,Jacobs Solutions Inc. Common Stock,nyse
+JBHT,False,"J.B. Hunt Transport Services, Inc. - Common Stock",nasdaq
+JCI,False,Johnson Controls International plc Ordinary Share,nyse
+JD,False,"JD.com, Inc. - American Depositary Shares",nasdaq
+JETS,True,U.S. Global Jets ETF,nysearca
+JKHY,False,"Jack Henry & Associates, Inc. - Common Stock",nasdaq
+JNJ,False,Johnson & Johnson Common Stock,nyse
+JNPR,False,"Juniper Networks, Inc. Common Stock",nyse
+JPM,False,JP Morgan Chase & Co. Common Stock,nyse
+K,False,Kellogg Company Common Stock,nyse
+KDP,False,Keurig Dr Pepper Inc. - Common Stock,nasdaq
+KEY,False,KeyCorp Common Stock,nyse
+KEYS,False,Keysight Technologies Inc. Common Stock,nyse
+KHC,False,The Kraft Heinz Company - Common Stock,nasdaq
+KIM,False,Kimco Realty Corporation (HC) Common Stock,nyse
+KKR,False,KKR & Co. Inc. Common Stock,nyse
+KLAC,False,KLA Corporation  - Common Stock,nasdaq
+KMB,False,Kimberly-Clark Corporation Common Stock,nyse
+KMI,False,"Kinder Morgan, Inc. Common Stock",nyse
+KMX,False,CarMax Inc,nyse
+KO,False,Coca-Cola Company (The) Common Stock,nyse
+KR,False,Kroger Company (The) Common Stock,nyse
+L,False,Loews Corporation Common Stock,nyse
+LABU,True,Direxion Daily S&P Biotech Bull 3X Shares,nysearca
+LBRDK,False,Liberty Broadband Corporation - Class C Common Stock,nasdaq
+LCID,False,"Lucid Group, Inc. - Common Stock",nasdaq
+LDOS,False,"Leidos Holdings, Inc. Common Stock",nyse
+LEN,False,Lennar Corporation Class A Common Stock,nyse
+LH,False,Laboratory Corporation of America Holdings Common Stock,nyse
+LHX,False,"L3Harris Technologies, Inc. Common Stock",nyse
+LI,False,Li Auto Inc. - American Depositary Shares,nasdaq
+LIN,False,Linde plc Ordinary Share,nyse
+LKQ,False,LKQ Corporation - Common Stock,nasdaq
+LLY,False,Eli Lilly and Company Common Stock,nyse
+LMT,False,Lockheed Martin Corporation Common Stock,nyse
+LNC,False,Lincoln National Corporation Common Stock,nyse
+LNG,False,"Cheniere Energy, Inc. Common Stock",amex
+LNT,False,Alliant Energy Corporation - Common Stock,nasdaq
+LOW,False,"Lowe's Companies, Inc. Common Stock",nyse
+LPLA,False,LPL Financial Holdings Inc. - Common Stock,nasdaq
+LRCX,False,Lam Research Corporation - Common Stock,nasdaq
+LULU,False,lululemon athletica inc. - Common Stock,nasdaq
+LUMN,False,"Lumen Technologies, Inc. Common Stock",nyse
+LUV,False,Southwest Airlines Company Common Stock,nyse
+LVS,False,Las Vegas Sands Corp. Common Stock,nyse
+LW,False,"Lamb Weston Holdings, Inc. Common Stock ",nyse
+LYB,False,LyondellBasell Industries NV Ordinary Shares Class A (Netherlands),nyse
+LYFT,False,"Lyft, Inc. - Class A Common Stock",nasdaq
+LYV,False,"Live Nation Entertainment, Inc. Common Stock",nyse
+MA,False,Mastercard Incorporated Common Stock,nyse
+MAA,False,"Mid-America Apartment Communities, Inc. Common Stock",nyse
+MAR,False,Marriott International - Class A Common Stock,nasdaq
+MAS,False,Masco Corporation Common Stock,nyse
+MCD,False,McDonald's Corporation Common Stock,nyse
+MCHP,False,Microchip Technology Incorporated - Common Stock,nasdaq
+MCK,False,McKesson Corporation Common Stock,nyse
+MCO,False,Moody's Corporation Common Stock,nyse
+MDB,False,"MongoDB, Inc. - Class A Common Stock",nasdaq
+MDLZ,False,"Mondelez International, Inc. - Class A Common Stock",nasdaq
+MDT,False,Medtronic plc. Ordinary Shares,nyse
+MELI,False,"MercadoLibre, Inc. - Common Stock",nasdaq
+MET,False,"MetLife, Inc. Common Stock",nyse
+META,False,"Meta Platforms, Inc. - Class A Common Stock",nasdaq
+MGM,False,MGM Resorts International Common Stock,nyse
+MHK,False,"Mohawk Industries, Inc. Common Stock",nyse
+MKC,False,"McCormick & Company, Incorporated Common Stock",nyse
+MKTX,False,"MarketAxess Holdings, Inc. - Common Stock",nasdaq
+MLCO,False,Melco Resorts & Entertainment Limited - American Depositary Shares ,nasdaq
+MLM,False,"Martin Marietta Materials, Inc. Common Stock",nyse
+MMC,False,"Marsh & McLennan Companies, Inc. Common Stock",nyse
+MMM,False,3M Company Common Stock,nyse
+MNST,False,Monster Beverage Corporation - Common Stock,nasdaq
+MO,False,"Altria Group, Inc.",nyse
+MOH,False,Molina Healthcare Inc Common Stock,nyse
+MOS,False,Mosaic Company (The) Common Stock,nyse
+MPC,False,Marathon Petroleum Corporation Common Stock,nyse
+MPW,False,"Medical Properties Trust, Inc. common stock",nyse
+MPWR,False,"Monolithic Power Systems, Inc. - Common Stock",nasdaq
+MRK,False,"Merck & Company, Inc. Common Stock (new)",nyse
+MRNA,False,"Moderna, Inc. - Common Stock",nasdaq
+MRO,False,Marathon Oil Corporation Common Stock,nyse
+MRVL,False,"Marvell Technology, Inc. - Common Stock",nasdaq
+MS,False,Morgan Stanley Common Stock,nyse
+MSCI,False,MSCI Inc Common Stock,nyse
+MSFT,False,Microsoft Corporation - Common Stock,nasdaq
+MSI,False,"Motorola Solutions, Inc. Common Stock",nyse
+MTB,False,M&T Bank Corporation Common Stock,nyse
+MTCH,False,"Match Group, Inc. - Common Stock",nasdaq
+MTD,False,"Mettler-Toledo International, Inc. Common Stock",nyse
+MU,False,"Micron Technology, Inc. - Common Stock",nasdaq
+NBDS,True,Neuberger Berman ETF Trust Neuberger Berman Disrupters ETF,nysearca
+NCLH,False,Norwegian Cruise Line Holdings Ltd. Ordinary Shares,nyse
+NDAQ,False,"Nasdaq, Inc. - Common Stock",nasdaq
+NDSN,False,Nordson Corporation - Common Stock,nasdaq
+NEE,False,"NextEra Energy, Inc. Common Stock",nyse
+NEM,False,Newmont Corporation,nyse
+NET,False,"Cloudflare, Inc. Class A Common Stock",nyse
+NFLX,False,"Netflix, Inc. - Common Stock",nasdaq
+NI,False,NiSource Inc Common Stock,nyse
+NICE,False,NICE Ltd - American Depositary Shares each representing one Ordinary Share,nasdaq
+NIO,False,"NIO Inc. American depositary shares, each  representing one Class A ordinary share",nyse
+NKE,False,"Nike, Inc. Common Stock",nyse
+NOC,False,Northrop Grumman Corporation Common Stock,nyse
+NOK,False,Nokia Corporation Sponsored American Depositary Shares,nyse
+NOW,False,"ServiceNow, Inc. Common Stock",nyse
+NRG,False,"NRG Energy, Inc. Common Stock",nyse
+NSC,False,Norfolk Southern Corporation Common Stock,nyse
+NTAP,False,"NetApp, Inc. - Common Stock",nasdaq
+NTES,False,"NetEase, Inc. - American Depositary Shares, each representing 5 ordinary shares",nasdaq
+NTR,False,Nutrien Ltd. Common Shares,nyse
+NTRS,False,Northern Trust Corporation - Common Stock,nasdaq
+NUE,False,Nucor Corporation Common Stock,nyse
+NVDA,False,NVIDIA Corporation - Common Stock,nasdaq
+NVO,False,Novo Nordisk A/S Common Stock,nyse
+NVR,False,"NVR, Inc. Common Stock",nyse
+NVS,False,Novartis AG Common Stock,nyse
+NWL,False,Newell Brands Inc. - Common Stock,nasdaq
+NWS,False,News Corporation - Class B Common Stock,nasdaq
+NWSA,False,News Corporation - Class A Common Stock,nasdaq
+NXPI,False,NXP Semiconductors N.V. - Common Stock,nasdaq
+NXST,False,"Nexstar Media Group, Inc. - Common Stock",nasdaq
+NYCB,False,"New York Community Bancorp, Inc. Common Stock",nyse
+O,False,Realty Income Corporation Common Stock,nyse
+ODFL,False,"Old Dominion Freight Line, Inc. - Common Stock",nasdaq
+OGN,False,Organon & Co. Common Stock ,nyse
+OKE,False,"ONEOK, Inc. Common Stock",nyse
+OKTA,False,"Okta, Inc. - Class A Common Stock",nasdaq
+OMC,False,Omnicom Group Inc. Common Stock,nyse
+ON,False,ON Semiconductor Corporation - Common Stock,nasdaq
+ORCL,False,Oracle Corporation Common Stock,nyse
+ORLY,False,"O'Reilly Automotive, Inc. - Common Stock",nasdaq
+OTIS,False,Otis Worldwide Corporation Common Stock ,nyse
+OVV,False,Ovintiv Inc. (DE),nyse
+OXY,False,Occidental Petroleum Corporation Common Stock,nyse
+PANW,False,"Palo Alto Networks, Inc. - Common Stock",nasdaq
+PARA,False,Paramount Global - Class B Common Stock,nasdaq
+PAYC,False,"Paycom Software, Inc. Common Stock",nyse
+PAYX,False,"Paychex, Inc. - Common Stock",nasdaq
+PBR,False,Petroleo Brasileiro S.A.- Petrobras Common Stock,nyse
+PCAR,False,PACCAR Inc. - Common Stock,nasdaq
+PCG,False,Pacific Gas & Electric Co. Common Stock,nyse
+PDD,False,Pinduoduo Inc. - American Depositary Shares,nasdaq
+PEAK,False,"Healthpeak Properties, Inc. Common Stock",nyse
+PEG,False,Public Service Enterprise Group Incorporated Common Stock,nyse
+PEP,False,"PepsiCo, Inc. - Common Stock",nasdaq
+PFE,False,"Pfizer, Inc. Common Stock",nyse
+PFG,False,Principal Financial Group Inc - Common Stock,nasdaq
+PG,False,Procter & Gamble Company (The) Common Stock,nyse
+PGR,False,Progressive Corporation (The) Common Stock,nyse
+PH,False,Parker-Hannifin Corporation Common Stock,nyse
+PHM,False,"PulteGroup, Inc. Common Stock",nyse
+PINS,False,"Pinterest, Inc. Class A Common Stock",nyse
+PKG,False,Packaging Corporation of America Common Stock,nyse
+PKI,False,"PerkinElmer, Inc. Common Stock",nyse
+PLD,False,"Prologis, Inc. Common Stock",nyse
+PLTR,False,Palantir Technologies Inc. Class A Common Stock,nyse
+PLUG,False,"Plug Power, Inc. - Common Stock",nasdaq
+PM,False,Philip Morris International Inc Common Stock,nyse
+PNC,False,"PNC Financial Services Group, Inc. (The) Common Stock",nyse
+PNR,False,Pentair plc. Ordinary Share,nyse
+PNW,False,Pinnacle West Capital Corporation Common Stock,nyse
+POOL,False,Pool Corporation - Common Stock,nasdaq
+PPG,False,"PPG Industries, Inc. Common Stock",nyse
+PPL,False,PPL Corporation Common Stock,nyse
+PRU,False,"Prudential Financial, Inc. Common Stock",nyse
+PSA,False,Public Storage Common Stock,nyse
+PSTG,False,"Pure Storage, Inc. Class A Common Stock",nyse
+PSX,False,Phillips 66 Common Stock,nyse
+PTC,False,PTC Inc. - Common Stock,nasdaq
+PTON,False,"Peloton Interactive, Inc. - Common Stock",nasdaq
+PWR,False,"Quanta Services, Inc. Common Stock",nyse
+PXD,False,Pioneer Natural Resources Company Common Stock,nyse
+PYPL,False,"PayPal Holdings, Inc. - Common Stock",nasdaq
+QCOM,False,QUALCOMM Incorporated - Common Stock,nasdaq
+QQQ,True,"Invesco QQQ Trust, Series 1",nasdaq
+QRVO,False,"Qorvo, Inc. - Common Stock",nasdaq
+RBLX,False,Roblox Corporation Class A Common Stock,nyse
+RCL,False,D/B/A Royal Caribbean Cruises Ltd. Common Stock,nyse
+RE,False,"Everest Re Group, Ltd. Common Stock",nyse
+REG,False,Regency Centers Corporation - Common Stock,nasdaq
+REGN,False,"Regeneron Pharmaceuticals, Inc. - Common Stock",nasdaq
+RELX,False,RELX PLC PLC American Depositary Shares (Each representing One Ordinary Share),nyse
+RF,False,Regions Financial Corporation Common Stock,nyse
+RHI,False,Robert Half International Inc. Common Stock,nyse
+RIO,False,Rio Tinto Plc Common Stock,nyse
+RIVN,False,"Rivian Automotive, Inc. - Class A Common Stock",nasdaq
+RJF,False,"Raymond James Financial, Inc. Common Stock",nyse
+RL,False,Ralph Lauren Corporation Common Stock,nyse
+RMD,False,ResMed Inc. Common Stock,nyse
+RNG,False,"RingCentral, Inc. Class A Common Stock",nyse
+ROK,False,"Rockwell Automation, Inc. Common Stock",nyse
+ROKU,False,"Roku, Inc. - Class A Common Stock",nasdaq
+ROL,False,"Rollins, Inc. Common Stock",nyse
+ROP,False,"Roper Technologies, Inc. Common Stock",nyse
+ROST,False,"Ross Stores, Inc. - Common Stock",nasdaq
+RSG,False,"Republic Services, Inc. Common Stock",nyse
+RTX,False,Raytheon Technologies Corporation Common Stock,nyse
+RUN,False,Sunrun Inc. - Common Stock,nasdaq
+RY,False,Royal Bank Of Canada Common Stock,nyse
+RYAAY,False,"Ryanair Holdings plc - American Depositary Shares, each representing five Ordinary Shares",nasdaq
+SAM,False,"Boston Beer Company, Inc. (The) Common Stock",nyse
+SAP,False,SAP  SE ADS,nyse
+SBAC,False,SBA Communications Corporation - Class A Common Stock,nasdaq
+SBNY,False,Signature Bank - Common Stock,nasdaq
+SBUX,False,Starbucks Corporation - Common Stock,nasdaq
+SCHA,True,Schwab U.S. Small-Cap ETF,nysearca
+SCHB,True,Schwab U.S. Broad Market ETF,nysearca
+SCHC,True,Schwab International Small-Cap Equity ETF,nysearca
+SCHD,True,Schwab US Dividend Equity ETF,nysearca
+SCHE,True,Schwab Emerging Markets Equity ETF,nysearca
+SCHF,True,Schwab International Equity ETF,nysearca
+SCHG,True,Schwab U.S. Large-Cap Growth ETF,nysearca
+SCHH,True,Schwab U.S. REIT ETF,nysearca
+SCHI,True,Schwab 5-10 Year Corporate Bond ETF,nysearca
+SCHJ,True,Schwab 1-5 Year Corporate Bond ETF,nysearca
+SCHK,True,Schwab 1000 Index ETF,nysearca
+SCHM,True,Schwab U.S. Mid Cap ETF,nysearca
+SCHO,True,Schwab Short-Term U.S. Treasury ETF,nysearca
+SCHQ,True,Schwab Long-Term U.S. Treasury ETF,nysearca
+SCHR,True,Schwab Intermediate-Term U.S. Treasury ETF,nysearca
+SCHV,True,Schwab U.S. Large-Cap Value ETF,nysearca
+SCHW,False,Charles Schwab Corporation (The) Common Stock,nyse
+SCHX,True,Schwab U.S. Large-Cap ETF,nysearca
+SCHZ,True,Schwab US Aggregate Bond ETF,nysearca
+SE,False,"Sea Limited American Depositary Shares, each representing one Class A Ordinary Share",nyse
+SEDG,False,"SolarEdge Technologies, Inc. - Common Stock",nasdaq
+SEE,False,Sealed Air Corporation Common Stock,nyse
+SGEN,False,Seagen Inc.  - Common Stock,nasdaq
+SHEL,False,Royal Dutch Shell PLC American Depositary Shares (each representing two (2) Ordinary Shares) ,nyse
+SHOP,False,Shopify Inc. Class A Subordinate Voting Shares,nyse
+SHW,False,Sherwin-Williams Company (The) Common Stock,nyse
+SIRI,False,Sirius XM Holdings Inc. - Common Stock,nasdaq
+SIVB,False,SVB Financial Group - Common Stock,nasdaq
+SJM,False,J.M. Smucker Company (The) New Common Stock,nyse
+SLB,False,Schlumberger N.V. Common Stock,nyse
+SLV,True,iShares Silver Trust,nysearca
+SNA,False,Snap-On Incorporated Common Stock,nyse
+SNAP,False,Snap Inc. Class A Common Stock,nyse
+SNN,False,"Smith & Nephew SNATS, Inc. Common Stock",nyse
+SNOW,False,Snowflake Inc. Class A Common Stock,nyse
+SNPS,False,"Synopsys, Inc. - Common Stock",nasdaq
+SNY,False,Sanofi - American Depositary Shares,nasdaq
+SO,False,Southern Company (The) Common Stock,nyse
+SOFI,False,"SoFi Technologies, Inc.  - Common Stock",nasdaq
+SONY,False,Sony Group Corporation American Depositary Shares ,nyse
+SOXL,True,Direxion Daily Semiconductor Bull 3x Shares,nysearca
+SOXX,True,iShares Semiconductor ETF,nasdaq
+SPG,False,"Simon Property Group, Inc. Common Stock",nyse
+SPGI,False,S&P Global Inc. Common Stock,nyse
+SPLK,False,Splunk Inc. - Common Stock,nasdaq
+SPOT,False,Spotify Technology S.A. Ordinary Shares,nyse
+SPXL,True,Direxion Daily S&P 500 Bull 3X Shares,nysearca
+SPXS,True,Direxion Daily S&P 500 Bear 3X,nysearca
+SPY,True,SPDR S&P 500,nysearca
+SQ,False,"Block, Inc. Class A Common Stock,",nyse
+SQM,False,Sociedad Quimica y Minera S.A. Common Stock,nyse
+SRE,False,DBA Sempra Common Stock,nyse
+SRPT,False,"Sarepta Therapeutics, Inc. - Common Stock",nasdaq
+STE,False,STERIS plc (Ireland) Ordinary Shares,nyse
+STLD,False,"Steel Dynamics, Inc. - Common Stock",nasdaq
+STM,False,STMicroelectronics N.V. Common Stock,nyse
+STT,False,State Street Corporation Common Stock,nyse
+STX,False,Seagate Technology Holdings PLC - Ordinary Shares (Ireland),nasdaq
+STZ,False,"Constellation Brands, Inc. Common Stock",nyse
+SU,False,Suncor Energy  Inc. Common Stock,nyse
+SVXY,True,ProShares Short VIX Short Term Futures ETF,bats
+SWK,False,"Stanley Black & Decker, Inc. Common Stock",nyse
+SWKS,False,"Skyworks Solutions, Inc. - Common Stock",nasdaq
+SWN,False,Southwestern Energy Company Common Stock,nyse
+SYF,False,Synchrony Financial Common Stock,nyse
+SYK,False,Stryker Corporation Common Stock,nyse
+SYY,False,Sysco Corporation Common Stock,nyse
+T,False,AT&T Inc.,nyse
+TAP,False,Molson Coors Beverage Company Class B Common Stock,nyse
+TBB,False,AT&T Inc. 5.350% Global Notes due 2066,nyse
+TBC,False,AT&T Inc. 5.625% Global Notes due 2067,nyse
+TD,False,Toronto Dominion Bank (The) Common Stock,nyse
+TDG,False,Transdigm Group Incorporated Common Stock,nyse
+TDOC,False,"Teladoc Health, Inc. Common Stock",nyse
+TDY,False,Teledyne Technologies Incorporated Common Stock,nyse
+TEAM,False,Atlassian Corporation  - Class A Common Stock,nasdaq
+TECH,False,Bio-Techne Corp - Common Stock,nasdaq
+TECK,False,Teck Resources Ltd Ordinary Shares,nyse
+TECL,True,Direxion Technology Bull 3X Shares,nysearca
+TEL,False,TE Connectivity Ltd. New Switzerland Registered Shares,nyse
+TER,False,"Teradyne, Inc. - Common Stock",nasdaq
+TFC,False,Truist Financial Corporation Common Stock,nyse
+TFX,False,Teleflex Incorporated Common Stock,nyse
+TGT,False,Target Corporation Common Stock,nyse
+THC,False,Tenet Healthcare Corporation Common Stock,nyse
+TJX,False,"TJX Companies, Inc. (The) Common Stock",nyse
+TLT,True,iShares 20+ Year Treasury Bond ETF,nasdaq
+TM,False,Toyota Motor Corporation Common Stock,nyse
+TME,False,"Tencent Music Entertainment Group American Depositary Shares, each representing two Class A Ordinary Shares",nyse
+TMO,False,Thermo Fisher Scientific Inc Common Stock,nyse
+TMUS,False,"T-Mobile US, Inc. - Common Stock",nasdaq
+TNA,True,Direxion Small Cap Bull 3X Shares,nysearca
+TOST,False,"Toast, Inc. Class A Common Stock",nyse
+TPR,False,"Tapestry, Inc. Common Stock",nyse
+TQQQ,True,ProShares UltraPro QQQ,nasdaq
+TRGP,False,"Targa Resources, Inc. Common Stock",nyse
+TRMB,False,Trimble Inc. - Common Stock,nasdaq
+TROW,False,"T. Rowe Price Group, Inc. - Common Stock",nasdaq
+TRP,False,TC Energy Corporation Common Stock,nyse
+TRU,False,TransUnion Common Stock,nyse
+TRV,False,"The Travelers Companies, Inc. Common Stock",nyse
+TSCO,False,Tractor Supply Company - Common Stock,nasdaq
+TSLA,False,"Tesla, Inc.  - Common Stock",nasdaq
+TSM,False,Taiwan Semiconductor Manufacturing Company Ltd.,nyse
+TSN,False,"Tyson Foods, Inc. Common Stock",nyse
+TT,False,Trane Technologies plc,nyse
+TTD,False,"The Trade Desk, Inc. - Class A Common Stock",nasdaq
+TTE,False,TotalEnergies SE,nyse
+TTWO,False,"Take-Two Interactive Software, Inc. - Common Stock",nasdaq
+TWLO,False,Twilio Inc. Class A Common Stock,nyse
+TXN,False,Texas Instruments Incorporated - Common Stock,nasdaq
+TXT,False,Textron Inc. Common Stock,nyse
+TYL,False,"Tyler Technologies, Inc. Common Stock",nyse
+U,False,Unity Software Inc. Common Stock,nyse
+UAL,False,"United Airlines Holdings, Inc. - Common Stock",nasdaq
+UBER,False,"Uber Technologies, Inc. Common Stock",nyse
+UBOT,True,"Direxion Daily Robotics, Artificial Intelligence & Automation Index Bull 2X Shares",nysearca
+UDR,False,"UDR, Inc. Common Stock",nyse
+UHS,False,"Universal Health Services, Inc. Common Stock",nyse
+UL,False,Unilever PLC Common Stock,nyse
+ULTA,False,"Ulta Beauty, Inc. - Common Stock",nasdaq
+UNH,False,UnitedHealth Group Incorporated Common Stock (DE),nyse
+UNP,False,Union Pacific Corporation Common Stock,nyse
+UPS,False,"United Parcel Service, Inc. Common Stock",nyse
+URI,False,"United Rentals, Inc. Common Stock",nyse
+USB,False,U.S. Bancorp Common Stock,nyse
+UTSL,True,Direxion Daily Utilities Bull 3X Shares,nysearca
+UVXY,True,ProShares Trust Ultra VIX Short Term Futures ETF,bats
+V,False,Visa Inc.,nyse
+VB,True,Vanguard Small-Cap ETF,nysearca
+VEA,True,Vanguard FTSE Developed Markets ETF,nysearca
+VEEV,False,Veeva Systems Inc. Class A Common Stock,nyse
+VFC,False,V.F. Corporation Common Stock,nyse
+VICI,False,VICI Properties Inc. Common Stock,nyse
+VLO,False,Valero Energy Corporation Common Stock,nyse
+VMC,False,Vulcan Materials Company (Holding Company) Common Stock,nyse
+VMW,False,"Vmware, Inc. Common stock, Class A",nyse
+VOO,True,Vanguard S&P 500 ETF,nysearca
+VRSK,False,"Verisk Analytics, Inc. - Common Stock",nasdaq
+VRSN,False,"VeriSign, Inc. - Common Stock",nasdaq
+VRTX,False,Vertex Pharmaceuticals Incorporated - Common Stock,nasdaq
+VTI,True,Vanguard Total Stock Market ETF,nysearca
+VTR,False,"Ventas, Inc. Common Stock",nyse
+VTRS,False,Viatris Inc. - Common Stock,nasdaq
+VZ,False,Verizon Communications Inc. Common Stock,nyse
+W,False,Wayfair Inc. Class A Common Stock,nyse
+WAB,False,Westinghouse Air Brake Technologies Corporation Common Stock,nyse
+WANT,True,Direxion Daily Consumer Discretionary Bull 3X Shares,nysearca
+WAT,False,Waters Corporation Common Stock,nyse
+WBA,False,"Walgreens Boots Alliance, Inc. - Common Stock",nasdaq
+WBD,False,"Warner Bros. Discovery, Inc. - Series A Common Stock",nasdaq
+WCN,False,"Waste Connections, Inc. Common Shares",nyse
+WDAY,False,"Workday, Inc. - Class A Common Stock",nasdaq
+WDC,False,Western Digital Corporation - Common Stock,nasdaq
+WEBL,True,Direxion Daily Dow Jones Internet Bull 3X Shares,nysearca
+WEC,False,"WEC Energy Group, Inc. Common Stock",nyse
+WELL,False,Welltower Inc. Common Stock,nyse
+WFC,False,Wells Fargo & Company Common Stock,nyse
+WHR,False,Whirlpool Corporation Common Stock,nyse
+WM,False,"Waste Management, Inc. Common Stock",nyse
+WMB,False,"Williams Companies, Inc. (The) Common Stock",nyse
+WMT,False,Walmart Inc. Common Stock,nyse
+WOLF,False,"Wolfspeed, Inc. Common Stock",nyse
+WRB,False,W.R. Berkley Corporation Common Stock,nyse
+WRK,False,Westrock Company Common Stock,nyse
+WSM,False,"Williams-Sonoma, Inc. Common Stock (DE)",nyse
+WST,False,"West Pharmaceutical Services, Inc. Common Stock",nyse
+WTW,False,Willis Towers Watson Public Limited Company - Ordinary Shares,nasdaq
+WY,False,Weyerhaeuser Company Common Stock,nyse
+WYNN,False,"Wynn Resorts, Limited - Common Stock",nasdaq
+XEL,False,Xcel Energy Inc. - Common Stock,nasdaq
+XLB,True,Materials Select Sector SPDR,nysearca
+XLC,True,The Communication Services Select Sector SPDR Fund,nysearca
+XLE,True,SPDR Select Sector Fund - Energy Select Sector,nysearca
+XLF,True,SPDR Select Sector Fund - Financial,nysearca
+XLI,True,SPDR Select Sector Fund - Industrial,nysearca
+XLK,True,SPDR Select Sector Fund - Technology,nysearca
+XLP,True,SPDR Select Sector Fund - Consumer Staples,nysearca
+XLRE,True,Real Estate Select Sector SPDR Fund (The),nysearca
+XLU,True,SPDR Select Sector Fund - Utilities,nysearca
+XLV,True,SPDR Select Sector Fund - Health Care,nysearca
+XLY,True,SPDR Select Sector Fund - Consumer Discretionary,nysearca
+XOM,False,Exxon Mobil Corporation Common Stock,nyse
+XPEV,False,"XPeng Inc. American depositary shares, each representing two Class A ordinary shares",nyse
+XRAY,False,DENTSPLY SIRONA Inc. - Common Stock,nasdaq
+XYL,False,Xylem Inc. Common Stock New,nyse
+YUM,False,"Yum! Brands, Inc.",nyse
+YUMC,False,"Yum China Holdings, Inc. Common Stock",nyse
+Z,False,"Zillow Group, Inc. - Class C Capital Stock",nasdaq
+ZBH,False,"Zimmer Biomet Holdings, Inc. Common Stock",nyse
+ZBRA,False,Zebra Technologies Corporation - Class A Common Stock,nasdaq
+ZI,False,ZoomInfo Technologies Inc. - Common Stock,nasdaq
+ZION,False,Zions Bancorporation N.A. - Common Stock,nasdaq
+ZM,False,"Zoom Video Communications, Inc. - Class A Common Stock",nasdaq
+ZS,False,"Zscaler, Inc. - Common Stock",nasdaq
+ZTS,False,Zoetis Inc. Class A Common Stock,nyse
