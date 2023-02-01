@@ -1,0 +1,11 @@
+Task
+
+Go to
+https://www.sec.gov/dera/data/financial-statement-data-sets.html
+Down their data for recent three years.
+Try to parse the revenue, earning, and cost data for each company in each quarter
+
+
+Go to 
+https://www.sec.gov/files/company_tickers.json
+Try to map the ticker in the stock market with the cik number in the sec financial report.
