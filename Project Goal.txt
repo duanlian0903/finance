@@ -9,3 +9,14 @@ Try to parse the revenue, earning, and cost data for each company in each quarte
 Go to 
 https://www.sec.gov/files/company_tickers.json
 Try to map the ticker in the stock market with the cik number in the sec financial report.
+
+get sec financial statement information
+
+current task: given one url, we need to download
+all the related zip file with the hyperlink.
+
+1. get all the hyperlink of zip file from the given url
+    1.1 I need to get the html source from the given url
+    1.2 get the hyperlink from the html source code
+2. we will download each zip file one by one
+3. we will save the zip file in the hard drive
