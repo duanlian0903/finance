@@ -3,7 +3,10 @@ import api.data.web.xml.source_code as adwxsc
 
 
 def get_soup_structure(html_source_code):
-    return bs4.BeautifulSoup(html_source_code, 'html.parser')
+    try:
+        return bs4.BeautifulSoup(html_source_code, 'html.parser')
+    except:
+        return None
 
 
 def get_all_tags(soup_structure, tag_text):
