@@ -2,11 +2,11 @@ import math
 import api.common.system.message as acsm
 
 
-def get_math_nan_value():  # tested
+def get_nan_value():  # tested
     return math.nan
 
 
-def check_whether_nan_value(number):  # tested
+def whether_nan_value(number):  # tested
     try:
         return math.isnan(number)
     except:
@@ -15,7 +15,7 @@ def check_whether_nan_value(number):  # tested
 
 
 def get_log_value(number, base_number=math.e):  # tested
-    log_value = get_math_nan_value()
+    log_value = get_nan_value()
     try:
         log_value = math.log(number, base_number)
     except:
@@ -24,7 +24,7 @@ def get_log_value(number, base_number=math.e):  # tested
 
 
 def get_exponential_value(number, base_number=math.e):  # tested
-    exponential_value = get_math_nan_value()
+    exponential_value = get_nan_value()
     try:
         exponential_value = math.pow(base_number, number)
     except:
@@ -33,7 +33,7 @@ def get_exponential_value(number, base_number=math.e):  # tested
 
 
 def get_original_percent_change_number(current_positive_number, base_positive_number):  # tested
-    percent_change = get_math_nan_value()
+    percent_change = get_nan_value()
     try:
         if (current_positive_number > 0) & (base_positive_number > 0):
             percent_change = (current_positive_number - base_positive_number)/base_positive_number
@@ -45,7 +45,7 @@ def get_original_percent_change_number(current_positive_number, base_positive_nu
 
 
 def get_transformed_percent_change_number(current_positive_number, base_positive_number):  # tested
-    percent_change = get_math_nan_value()
+    percent_change = get_nan_value()
     try:
         if (current_positive_number > 0) & (base_positive_number > 0):
             if current_positive_number > base_positive_number:
@@ -60,7 +60,7 @@ def get_transformed_percent_change_number(current_positive_number, base_positive
 
 
 def get_percent_position(current_number, highest_number, lowest_number):  # tested
-    percent_position = get_math_nan_value()
+    percent_position = get_nan_value()
     try:
         if (highest_number > lowest_number) & (highest_number >= current_number) & (current_number >= lowest_number):
             percent_position = 100*(current_number-lowest_number)/(highest_number-lowest_number)
@@ -72,7 +72,7 @@ def get_percent_position(current_number, highest_number, lowest_number):  # test
 
 
 def get_relative_percent_portion(portion1_number, portion2_number):  # tested
-    portion = get_math_nan_value()
+    portion = get_nan_value()
     try:
         if (portion1_number >= 0) & (portion2_number >= 0) & (portion1_number+portion2_number > 0):
             portion = 100*portion1_number/(portion1_number+portion2_number)
@@ -91,7 +91,7 @@ def get_updated_max(current_max, new_value):  # tested
             return new_value
     except:
         acsm.show_fundamental_operation_exception_message('Having unexpected error to get max[' + str(current_max) + ', ' + str(new_value) + '], and return None value.')
-        return get_math_nan_value()
+        return get_nan_value()
 
 
 def get_updated_min(current_min, new_value):  # tested
@@ -102,7 +102,7 @@ def get_updated_min(current_min, new_value):  # tested
             return new_value
     except:
         acsm.show_fundamental_operation_exception_message('Having unexpected error to get min[' + str(current_min) + ', ' + str(new_value) + '], and return None value.')
-        return get_math_nan_value()
+        return get_nan_value()
 
 
 def get_decimal_value_position(number_value):
@@ -132,7 +132,7 @@ def convert_comma_string_into_number(comma_string):  # tested
         result = float(comma_string.replace(',', ''))
     except:
         acsm.show_fundamental_operation_exception_message('Having error converting string [' + str(comma_string) + '] to number, and return nan value.')
-        result = get_math_nan_value()
+        result = get_nan_value()
     return result
 
 
@@ -150,8 +150,8 @@ def convert_special_letter_ending_string_into_number(special_letter_ending_strin
             result = float(special_letter_ending_string[:-1]) * 1000000000000
         else:
             acsm.show_fundamental_operation_exception_message('Having unexpected ending [' + str(special_letter_ending_string) + '], and return nan value.')
-            result = get_math_nan_value()
+            result = get_nan_value()
     except:
         acsm.show_fundamental_operation_exception_message('Having error converting string [' + str(special_letter_ending_string) + '] to number, and return nan value.')
-        result = get_math_nan_value()
+        result = get_nan_value()
     return result
