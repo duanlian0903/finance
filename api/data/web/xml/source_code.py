@@ -8,3 +8,4 @@ def get_requests_header():
 def get_xml_source_code(url):
     req = requests.get(url, headers=get_requests_header())
     return req.text
+
