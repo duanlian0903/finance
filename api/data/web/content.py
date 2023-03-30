@@ -24,4 +24,3 @@ def get_source_text(url, headers=__get_requests_header(), timeout=10):
         return get_request(url, headers=headers, timeout=timeout).text
     except:
         return None
-
