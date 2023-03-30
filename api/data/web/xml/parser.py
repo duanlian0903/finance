@@ -14,7 +14,7 @@ def get_all_tags(soup_structure, tag_text):
     try:
         return soup_structure.find_all(tag_text)
     except:
-        return None
+        return []
 
 
 def get_tag_attribute(tag, attribute_text):
