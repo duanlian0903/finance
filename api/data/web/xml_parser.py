@@ -1,5 +1,5 @@
 import bs4
-import api.data.web.xml.source_code as adwxsc
+import api.data.web.content as adwc
 import api.common.data_type_operation.check_data_type as acdtocdt
 import api.common.data_type_operation.number_string_boolean_bytes as acdtonsbb
 
@@ -33,7 +33,7 @@ def get_absolute_url(given_webpage_url, relative_path):
 
 
 def get_all_the_urls_in_the_given_webpage(given_webpage_url):
-    html_source_code = adwxsc.get_xml_source_code(given_webpage_url)
+    html_source_code = adwc.get_source_text(given_webpage_url)
     soup_structure = get_soup_structure(html_source_code)
     urls = []
     for tag in get_all_tags(soup_structure, 'a'):
