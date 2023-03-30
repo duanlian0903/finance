@@ -1,6 +1,7 @@
 import bs4
 import api.data.web.xml.source_code as adwxsc
 import api.common.data_type_operation.check_data_type as acdtocdt
+import api.common.data_type_operation.number_string_boolean_bytes as acdtonsbb
 
 
 def get_soup_structure(html_source_code):
@@ -22,6 +23,13 @@ def get_tag_attribute(tag, attribute_text):
         return tag.get(attribute_text)
     except:
         None
+
+
+def get_absolute_url(given_webpage_url, relative_path):
+    try:
+        return given_webpage_url[:acdtonsbb.get_i_th_occurrence_position(3, given_webpage_url, '/')] + relative_path
+    except:
+        return None
 
 
 def get_all_the_urls_in_the_given_webpage(given_webpage_url):

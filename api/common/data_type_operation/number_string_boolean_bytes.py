@@ -155,3 +155,15 @@ def convert_special_letter_ending_string_into_number(special_letter_ending_strin
         acsm.show_fundamental_operation_exception_message('Having error converting string [' + str(special_letter_ending_string) + '] to number, and return nan value.')
         result = get_nan_value()
     return result
+
+
+def get_i_th_occurrence_position(i_th, text, sub_text):
+    try:
+        position = -1
+        total_occurrence = len(text.split(sub_text)) - 1
+        if i_th <= total_occurrence:
+            for i in range(i_th):
+                position = text.find(sub_text, position + 1)
+        return position
+    except:
+        return -1
