@@ -5,6 +5,7 @@ import pickle
 import shutil
 import api.common.system.message as acsm
 import api.common.data_type_operation.check_data_type as acdtocdt
+import zipfile
 
 
 def check_file_existence(file_path):  # tested
@@ -58,12 +59,38 @@ def make_all_related_folders_for_a_given_file_path(file_path):
     make_all_related_folders(get_folder_path(file_path))
 
 
+def get_file_folder_list(folder_path):
+    try:
+        return os.listdir(folder_path)
+    except:
+        acsm.show_fundamental_operation_exception_message('Fail to get file and folder list in the given folder due to unexpected errors.')
+        return []
+
+
+def get_file_list(folder_path):
+    file_folder_list = get_file_folder_list(folder_path)
+    file_list = []
+    for file_folder in file_folder_list:
+        if check_file_existence(folder_path + '/' + file_folder):
+            file_list.append(file_folder)
+    return file_list
+
+
+def get_folder_list(folder_path):
+    file_folder_list = get_file_folder_list(folder_path)
+    folder_list = []
+    for file_folder in file_folder_list:
+        if check_folder_existence(folder_path + '/' + file_folder):
+            folder_list.append(file_folder)
+    return folder_list
+
+
 def delete_file_in_the_current_folder(folder_path):  # tested
     try:
         make_all_related_folders_for_a_given_file_path(folder_path + '/test.txt')
-        file_folder_list = os.listdir(folder_path)
-        for file_folder in file_folder_list:
-            file_name = folder_path + '/' + file_folder
+        file_list = get_file_list(folder_path)
+        for file in file_list:
+            file_name = folder_path + '/' + file
             delete_file(file_name)
     except:
         acsm.show_fundamental_operation_exception_message('Fail to delete files in the given folder level due to unexpected errors.')
@@ -72,11 +99,10 @@ def delete_file_in_the_current_folder(folder_path):  # tested
 def delete_file_inside_folder(folder_path):  # tested
     try:
         delete_file_in_the_current_folder(folder_path)
-        file_folder_list = os.listdir(folder_path)
-        for file_folder in file_folder_list:
-            path = folder_path + '/' + file_folder
-            if check_folder_existence(path):
-                delete_file_inside_folder(path)
+        folder_list = get_folder_list(folder_path)
+        for folder in folder_list:
+            path = folder_path + '/' + folder
+            delete_file_inside_folder(path)
     except:
         acsm.show_fundamental_operation_exception_message('Fail to delete files insider all the sub-folders due to unexpected errors.')
 
@@ -217,6 +243,17 @@ def save_binary_file(binary_content, file_path):
             acsm.show_fundamental_operation_exception_message('We have trouble saving binary content because the file name is not a string.')
     except:
         acsm.show_fundamental_operation_exception_message('We have trouble saving binary content due to unexpected errors.')
+
+
+def unzip_zip_file(file_path, folder_path):
+    try:
+        if acdtocdt.whether_string(file_path) & acdtocdt.whether_string(folder_path):
+            z_object = zipfile.ZipFile(file_path, 'r')
+            z_object.extractall(folder_path)
+        else:
+            acsm.show_fundamental_operation_exception_message('We have trouble unzipping files because the file or folder name is not a string.')
+    except:
+        acsm.show_fundamental_operation_exception_message('We have trouble unzipping files due to unexpected errors.')
 
 
 '''

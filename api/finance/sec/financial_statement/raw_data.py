@@ -26,3 +26,6 @@ def download_all_quarterly_statement_zip_files():
     for quarterly_statement_link in quarterly_statement_link_list:
         __save_given_zip_file(quarterly_statement_link)
 
+
+def unzip_all_quarterly_statement_zip_files():
+    check = 1
