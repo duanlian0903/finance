@@ -15,3 +15,7 @@ def get_sec_quarterly_financial_statement_folder():
 
 def get_sec_quarterly_financial_statement_zip_file(year, quarter):
     return get_sec_quarterly_financial_statement_folder() + '/' + str(year) + 'q' + str(quarter) + '.zip'
+
+
+def get_given_sec_quarterly_financial_statement_folder(year, quarter):
+    return get_sec_quarterly_financial_statement_folder() + '/' + str(year) + 'q' + str(quarter)
