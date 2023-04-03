@@ -207,6 +207,18 @@ def save_excel_file(df, file_path):  # tested
         acsm.show_fundamental_operation_exception_message('We have trouble saving excel file due to unexpected errors.')
 
 
+def save_binary_file(binary_content, file_path):
+    try:
+        if acdtocdt.whether_string(file_path):
+            file = open(file_path, 'wb')
+            file.write(binary_content)
+            file.close()
+        else:
+            acsm.show_fundamental_operation_exception_message('We have trouble saving binary content because the file name is not a string.')
+    except:
+        acsm.show_fundamental_operation_exception_message('We have trouble saving binary content due to unexpected errors.')
+
+
 '''
 def generate_summary_df_in_the_folder(folder_name):  # tested
     try:
