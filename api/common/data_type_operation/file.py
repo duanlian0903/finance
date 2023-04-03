@@ -233,11 +233,14 @@ def save_excel_file(df, file_path):  # tested
         acsm.show_fundamental_operation_exception_message('We have trouble saving excel file due to unexpected errors.')
 
 
-def save_binary_file(binary_content, file_path):
+def save_file(content, file_path, whether_binary=True):
     try:
         if acdtocdt.whether_string(file_path):
-            file = open(file_path, 'wb')
-            file.write(binary_content)
+            if whether_binary:
+                file = open(file_path, 'wb')
+            else:
+                file = open(file_path, 'wt')
+            file.write(content)
             file.close()
         else:
             acsm.show_fundamental_operation_exception_message('We have trouble saving binary content because the file name is not a string.')

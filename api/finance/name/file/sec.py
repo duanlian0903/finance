@@ -19,3 +19,7 @@ def get_sec_quarterly_financial_statement_zip_file(year, quarter):
 
 def get_given_sec_quarterly_financial_statement_folder(year, quarter):
     return get_sec_quarterly_financial_statement_folder() + '/' + str(year) + 'q' + str(quarter)
+
+
+def get_ticker_cik_json_file():
+    return get_sec_folder() + '/company_tickers.json'

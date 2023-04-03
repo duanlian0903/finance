@@ -167,3 +167,11 @@ def get_i_th_occurrence_position(i_th, text, sub_text):
         return position
     except:
         return -1
+
+
+def get_string_from_bytes_with_utf_8(bytes_data):
+    return bytes_data.decode('utf-8')
+
+
+def get_clean_string(original_string):
+    return original_string.strip(' \n')
