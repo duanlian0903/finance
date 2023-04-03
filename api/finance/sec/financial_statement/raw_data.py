@@ -28,4 +28,9 @@ def download_all_quarterly_statement_zip_files():
 
 
 def unzip_all_quarterly_statement_zip_files():
-    check = 1
+    file_list = acdtof.get_file_list(afnfs.get_sec_quarterly_financial_statement_folder())
+    for file in file_list:
+        if file.endswith('.zip'):
+            related_folder = afnfs.get_sec_quarterly_financial_statement_folder()+'/'+file[:-4]
+            if not acdtof.check_folder_existence(related_folder):
+                acdtof.unzip_zip_file(afnfs.get_sec_quarterly_financial_statement_folder()+'/'+file, related_folder)
