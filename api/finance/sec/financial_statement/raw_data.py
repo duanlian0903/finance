@@ -21,16 +21,21 @@ def __save_given_zip_file(url):
         acdtof.save_binary_file(adwc.get_binary_content(url), file_path)
 
 
-def download_all_quarterly_statement_zip_files():
+def __download_all_quarterly_statement_zip_files():
     quarterly_statement_link_list = __get_quarterly_statement_link_list()
     for quarterly_statement_link in quarterly_statement_link_list:
         __save_given_zip_file(quarterly_statement_link)
 
 
-def unzip_all_quarterly_statement_zip_files():
+def __unzip_all_quarterly_statement_zip_files():
     file_list = acdtof.get_file_list(afnfs.get_sec_quarterly_financial_statement_folder())
     for file in file_list:
         if file.endswith('.zip'):
             related_folder = afnfs.get_sec_quarterly_financial_statement_folder()+'/'+file[:-4]
             if not acdtof.check_folder_existence(related_folder):
                 acdtof.unzip_zip_file(afnfs.get_sec_quarterly_financial_statement_folder()+'/'+file, related_folder)
+
+
+def prepare_sec_raw_data():
+    __download_all_quarterly_statement_zip_files()
+    __unzip_all_quarterly_statement_zip_files()
