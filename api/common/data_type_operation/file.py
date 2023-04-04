@@ -236,6 +236,7 @@ def save_excel_file(df, file_path):  # tested
 def save_file(content, file_path, whether_binary=True):
     try:
         if acdtocdt.whether_string(file_path):
+            make_all_related_folders_for_a_given_file_path(file_path)
             if whether_binary:
                 file = open(file_path, 'wb')
             else:
