@@ -50,7 +50,8 @@ def get_folder_path(file_path):
 def make_all_related_folders(folder_path):
     try:
         if folder_path != '':
-            os.makedirs(folder_path)
+            if not check_folder_existence(folder_path):
+                os.makedirs(folder_path)
     except:
         acsm.show_fundamental_operation_exception_message('Fail to generate all the related folders due to unexpected errors.')
 

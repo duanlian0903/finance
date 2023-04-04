@@ -3,6 +3,7 @@ import api.data.web.content as adwc
 import api.finance.name.file.sec as afnfs
 import api.common.data_type_operation.file as acdtof
 import api.common.data_type_operation.number_string_boolean_bytes as acdtonsbb
+import api.common.system.message as acsm
 
 
 def __get_quarterly_statement_link_list():
@@ -25,16 +26,26 @@ def __save_given_zip_file(url):
 def __download_all_quarterly_statement_zip_files():
     quarterly_statement_link_list = __get_quarterly_statement_link_list()
     for quarterly_statement_link in quarterly_statement_link_list:
+        acsm.show_normal_operation_exception_message('Start downloading ' + quarterly_statement_link)
         __save_given_zip_file(quarterly_statement_link)
 
 
-def __unzip_all_quarterly_statement_zip_files():
+def __get_quarterly_statement_zip_filename_list():
+    zip_file_list = []
     file_list = acdtof.get_file_list(afnfs.get_sec_quarterly_financial_statement_folder())
     for file in file_list:
         if file.endswith('.zip'):
-            related_folder = afnfs.get_sec_quarterly_financial_statement_folder()+'/'+file[:-4]
-            if not acdtof.check_folder_existence(related_folder):
-                acdtof.unzip_zip_file(afnfs.get_sec_quarterly_financial_statement_folder()+'/'+file, related_folder)
+            zip_file_list.append(file)
+    return sorted(zip_file_list)
+
+
+def __unzip_all_quarterly_statement_zip_files():
+    file_list = __get_quarterly_statement_zip_filename_list()
+    for file in file_list:
+        related_folder = afnfs.get_sec_quarterly_financial_statement_folder()+'/'+file[:-4]
+        if not acdtof.check_folder_existence(related_folder):
+            acsm.show_normal_operation_exception_message('Start unzipping ' + file)
+            acdtof.unzip_zip_file(afnfs.get_sec_quarterly_financial_statement_folder()+'/'+file, related_folder)
 
 
 def __update_sec_ticker_cik_json_file():
