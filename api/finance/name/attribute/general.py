@@ -11,3 +11,11 @@ def append_prefix_list(attribute_name, prefix_list):
         for prefix in prefix_list:
             final_attribute_name = append_prefix(final_attribute_name, prefix)
     return final_attribute_name
+
+
+def get_company_name():
+    return 'Company Name'
+
+
+def get_ticker():
+    return 'Symbol'
