@@ -21,5 +21,21 @@ def get_given_sec_quarterly_financial_statement_folder(year, quarter):
     return get_sec_quarterly_financial_statement_folder() + '/' + str(year) + 'q' + str(quarter)
 
 
+def get_sec_quarterly_num_file(year, quarter):
+    return get_given_sec_quarterly_financial_statement_folder(year, quarter) + '/num.txt'
+
+
+def get_sec_quarterly_pre_file(year, quarter):
+    return get_given_sec_quarterly_financial_statement_folder(year, quarter) + '/pre.txt'
+
+
+def get_sec_quarterly_sub_file(year, quarter):
+    return get_given_sec_quarterly_financial_statement_folder(year, quarter) + '/sub.txt'
+
+
+def get_sec_quarterly_tag_file(year, quarter):
+    return get_given_sec_quarterly_financial_statement_folder(year, quarter) + '/tag.txt'
+
+
 def get_ticker_cik_json_file():
     return get_sec_folder() + '/company_tickers.json'

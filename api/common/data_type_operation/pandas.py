@@ -118,3 +118,46 @@ def change_dataframe_column_name_and_select_only_existing_and_related_columns(df
     except:
         acsm.show_fundamental_operation_exception_message('We return the original dataframe because of unexpected errors.')
     return result
+
+
+def get_duplicated_index_removed_with_the_first_df(original_df):
+    return original_df[~original_df.index.duplicated(keep='first')]
+
+
+def set_wide_print_setting():
+    pd.set_option('display.max_rows', None)
+    pd.set_option('display.max_columns', None)
+    pd.set_option('display.width', None)
+    pd.set_option('display.max_colwidth', 15)
+
+
+def get_df_with_given_index_list(df, given_list):
+    selected_list = []
+    for item in given_list:
+        if item in df.index:
+            selected_list.append(item)
+    return df.loc[selected_list, ]
+
+
+def get_df_from_csv_file(file_name, sep=','):
+    try:
+        return pd.read_csv(file_name, sep=sep)
+    except:
+        acsm.show_fundamental_operation_exception_message('We return the null dataframe because of unexpected errors.')
+        return get_empty_data_frame()
+
+
+def get_related_past_df(past_df, new_raw_df):
+    index_list = []
+    for index in past_df.index:
+        if index in new_raw_df.index:
+            index_list.append(index)
+    return past_df.loc[index_list, ]
+
+
+def get_appended_column_name_df(original_df, append_text):
+    new_column_name_list = []
+    for column_name in original_df.columns:
+        new_column_name_list.append(append_text + ' ' + column_name)
+    original_df.columns = new_column_name_list
+    return original_df
