@@ -6,14 +6,14 @@ import datetime as dt
 
 def show_fundamental_operation_exception_message(exception_message, whether_speak_message=False):
     if app.whether_show_fundamental_operation_exception_message():
-        print(str(dt.datetime.now()) + ': ' + exception_message)
+        print('[' + str(dt.datetime.now()) + ']: ' + exception_message)
         if whether_speak_message:
             speak_message(exception_message)
 
 
 def show_normal_operation_exception_message(exception_message, whether_speak_message=False):
     if app.whether_show_normal_operation_exception_message():
-        print(str(dt.datetime.now()) + ': ' + exception_message)
+        print('[' + str(dt.datetime.now()) + ']: ' + exception_message)
         if whether_speak_message:
             speak_message(exception_message)
 
