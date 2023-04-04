@@ -14,6 +14,10 @@ def whether_show_normal_operation_exception_message():
     return True
 
 
+def whether_show_normal_operation_progress_message():
+    return True
+
+
 def whether_save_csv_for_dataframe():
     return True
 

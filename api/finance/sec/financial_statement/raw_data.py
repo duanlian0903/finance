@@ -26,7 +26,7 @@ def __save_given_zip_file(url):
 def __download_all_quarterly_statement_zip_files():
     quarterly_statement_link_list = __get_quarterly_statement_link_list()
     for quarterly_statement_link in quarterly_statement_link_list:
-        acsm.show_normal_operation_exception_message('Start downloading ' + quarterly_statement_link)
+        acsm.show_normal_operation_progress_message('Start downloading ' + quarterly_statement_link)
         __save_given_zip_file(quarterly_statement_link)
 
 
@@ -39,13 +39,17 @@ def __get_quarterly_statement_zip_filename_list():
     return sorted(zip_file_list)
 
 
+def __unzip_given_zip_file(filename):
+    related_folder = afnfs.get_sec_quarterly_financial_statement_folder()+'/'+filename[:-4]
+    if not acdtof.check_folder_existence(related_folder):
+        acdtof.unzip_zip_file(afnfs.get_sec_quarterly_financial_statement_folder()+'/'+filename, related_folder)
+
+
 def __unzip_all_quarterly_statement_zip_files():
-    file_list = __get_quarterly_statement_zip_filename_list()
-    for file in file_list:
-        related_folder = afnfs.get_sec_quarterly_financial_statement_folder()+'/'+file[:-4]
-        if not acdtof.check_folder_existence(related_folder):
-            acsm.show_normal_operation_exception_message('Start unzipping ' + file)
-            acdtof.unzip_zip_file(afnfs.get_sec_quarterly_financial_statement_folder()+'/'+file, related_folder)
+    filename_list = __get_quarterly_statement_zip_filename_list()
+    for filename in filename_list:
+        acsm.show_normal_operation_progress_message('Start unzipping ' + filename)
+        __unzip_given_zip_file(filename)
 
 
 def __update_sec_ticker_cik_json_file():
@@ -54,6 +58,8 @@ def __update_sec_ticker_cik_json_file():
 
 
 def prepare_sec_raw_data():
+    acsm.show_normal_operation_progress_message('Start getting sec data.')
     __download_all_quarterly_statement_zip_files()
     __unzip_all_quarterly_statement_zip_files()
     __update_sec_ticker_cik_json_file()
+    acsm.show_normal_operation_progress_message('Finish getting sec data.')

@@ -4,18 +4,25 @@ import playsound
 import datetime as dt
 
 
+def __show_message(message, whether_speak_message):
+    print('[' + str(dt.datetime.now()) + ']: ' + message)
+    if whether_speak_message:
+        speak_message(message)
+
+
 def show_fundamental_operation_exception_message(exception_message, whether_speak_message=False):
     if app.whether_show_fundamental_operation_exception_message():
-        print('[' + str(dt.datetime.now()) + ']: ' + exception_message)
-        if whether_speak_message:
-            speak_message(exception_message)
+        __show_message(exception_message, whether_speak_message)
 
 
 def show_normal_operation_exception_message(exception_message, whether_speak_message=False):
     if app.whether_show_normal_operation_exception_message():
-        print('[' + str(dt.datetime.now()) + ']: ' + exception_message)
-        if whether_speak_message:
-            speak_message(exception_message)
+        __show_message(exception_message, whether_speak_message)
+
+
+def show_normal_operation_progress_message(progress_message, whether_speak_message=False):
+    if app.whether_show_normal_operation_progress_message():
+        __show_message(progress_message, whether_speak_message)
 
 
 def general_mp3_for_text(text_content, file_name):
