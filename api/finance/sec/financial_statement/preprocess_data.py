@@ -1,5 +1,6 @@
 import api.common.data_type_operation.file as acdtof
 import api.common.data_type_operation.pandas as acdtop
+import api.common.data_type_operation.dict as acdtod
 import api.common.system.message as acsm
 import api.finance.name.file.sec as afnfs
 import api.finance.name.attribute.fundamental_analysis as afnafa
@@ -68,3 +69,60 @@ def get_existing_quarterly_report_list():
     for folder in folder_list:
         existing_quarterly_report_list.append([int(folder[:4]), int(folder[-1])])
     return existing_quarterly_report_list
+
+
+def __update_quarterly_summary_dict(year, quarter):
+    if acdtof.check_file_existence(afnfs.get_given_sec_quarterly_financial_statement_summary_json_file(year, quarter)):
+        acsm.show_normal_operation_exception_message('Skip the update because the summary for this quarter exists with (' + str(year) + ', ' + str(quarter) + ')')
+    else:
+        num_df = __get_quarterly_num_df(year, quarter)
+        sub_df = __get_quarterly_sub_df(year, quarter)
+        summary_dict = {}
+        cik_set = set(sub_df['cik'])
+        for cik in cik_set:
+            related_sub_df = sub_df[sub_df['cik'] == cik].sort_values(['accepted'])
+            for index_i in related_sub_df.index:
+                adsh = related_sub_df.loc[index_i, 'adsh']
+                related_num_df = num_df[num_df['adsh'] == adsh]
+                for index_j in related_num_df.index:
+                    tag = related_num_df.loc[index_j, 'tag']
+                    ddate = str(related_num_df.loc[index_j, 'ddate'])
+                    qtrs = str(related_num_df.loc[index_j, 'qtrs'])
+                    uom = related_num_df.loc[index_j, 'uom']
+                    value = related_num_df.loc[index_j, 'value']
+                    if str(cik) not in summary_dict:
+                        summary_dict[str(cik)] = {}
+                    if tag not in summary_dict[str(cik)]:
+                        summary_dict[str(cik)][tag] = {}
+                    if ddate not in summary_dict[str(cik)][tag]:
+                        summary_dict[str(cik)][tag][ddate] = {}
+                    summary_dict[str(cik)][tag][ddate][qtrs] = {'value': value, 'unit': uom}
+        acdtof.save_dict_as_json_file(summary_dict, afnfs.get_given_sec_quarterly_financial_statement_summary_json_file(year, quarter))
+
+
+def __get_quarterly_summary_dict(year, quarter):
+    return acdtof.load_json_file_as_dict(afnfs.get_given_sec_quarterly_financial_statement_summary_json_file(year, quarter))
+
+
+def __update_all_quarterly_summary_dict():
+    existing_quarterly_report_list = get_existing_quarterly_report_list()
+    for quarterly_para in existing_quarterly_report_list:
+        acsm.show_normal_operation_progress_message('Start processing quarterly summary dict for ' + str(quarterly_para))
+        __update_quarterly_summary_dict(quarterly_para[0], quarterly_para[1])
+
+
+def __update_all_cik_summary_dict():
+    existing_quarterly_report_list = get_existing_quarterly_report_list()
+    for quarterly_para in existing_quarterly_report_list:
+        acsm.show_normal_operation_progress_message('Start processing cik summary dict with ' + str(quarterly_para))
+        quarterly_summary_dict = __get_quarterly_summary_dict(quarterly_para[0], quarterly_para[1])
+        for cik in quarterly_summary_dict:
+            existing_information_dict = acdtof.load_json_file_as_dict(afnfs.get_given_cik_financial_statement_summary_json_file(cik))
+            current_information_dict = quarterly_summary_dict[cik]
+            updated_information_dict = acdtod.merge_dict(existing_information_dict, current_information_dict)
+            acdtof.save_dict_as_json_file(updated_information_dict, afnfs.get_given_cik_financial_statement_summary_json_file(cik))
+
+
+def preprocess_data():
+    __update_all_quarterly_summary_dict()
+    __update_all_cik_summary_dict()
