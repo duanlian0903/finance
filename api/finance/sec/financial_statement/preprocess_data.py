@@ -113,14 +113,22 @@ def __update_all_quarterly_summary_dict():
 
 def __update_all_cik_summary_dict():
     existing_quarterly_report_list = get_existing_quarterly_report_list()
+    processed_quarterly_report_dict = acdtof.load_json_file_as_dict(afnfs.get_cik_original_financial_statement_update_process_json_file())
+    if len(processed_quarterly_report_dict) == 0:
+        processed_quarterly_report_dict['processed'] = []
     for quarterly_para in existing_quarterly_report_list:
-        acsm.show_normal_operation_progress_message('Start processing cik summary dict with ' + str(quarterly_para))
-        quarterly_summary_dict = __get_quarterly_summary_dict(quarterly_para[0], quarterly_para[1])
-        for cik in quarterly_summary_dict:
-            existing_information_dict = acdtof.load_json_file_as_dict(afnfs.get_given_cik_financial_statement_summary_json_file(cik))
-            current_information_dict = quarterly_summary_dict[cik]
-            updated_information_dict = acdtod.merge_dict(existing_information_dict, current_information_dict)
-            acdtof.save_dict_as_json_file(updated_information_dict, afnfs.get_given_cik_financial_statement_summary_json_file(cik))
+        if quarterly_para in processed_quarterly_report_dict['processed']:
+            acsm.show_normal_operation_progress_message('Skip the processed update with ' + str(quarterly_para))
+        else:
+            acsm.show_normal_operation_progress_message('Start processing cik summary dict with ' + str(quarterly_para))
+            quarterly_summary_dict = __get_quarterly_summary_dict(quarterly_para[0], quarterly_para[1])
+            for cik in quarterly_summary_dict:
+                existing_information_dict = acdtof.load_json_file_as_dict(afnfs.get_given_cik_original_financial_statement_summary_json_file(cik))
+                current_information_dict = quarterly_summary_dict[cik]
+                updated_information_dict = acdtod.merge_dict(existing_information_dict, current_information_dict)
+                acdtof.save_dict_as_json_file(updated_information_dict, afnfs.get_given_cik_original_financial_statement_summary_json_file(cik))
+            processed_quarterly_report_dict['processed'].append(quarterly_para)
+            acdtof.save_dict_as_json_file(processed_quarterly_report_dict, afnfs.get_cik_original_financial_statement_update_process_json_file())
 
 
 def preprocess_data():
