@@ -131,6 +131,6 @@ def __update_all_cik_summary_dict():
             acdtof.save_dict_as_json_file(processed_quarterly_report_dict, afnfs.get_cik_original_financial_statement_update_process_json_file())
 
 
-def preprocess_data():
+def get_original_cik_data():
     __update_all_quarterly_summary_dict()
     __update_all_cik_summary_dict()
