@@ -30,6 +30,16 @@ def generate_multi_row_dataframe_from_list_of_dictionary(list_of_dictionary_data
     return result
 
 
+def generate_multi_row_dataframe_from_nested_dictionary(nested_dictionary):  # tested
+    result = get_empty_data_frame()
+    try:
+        if len(nested_dictionary) != 0:
+            result = pd.DataFrame(nested_dictionary).T
+    except:
+        acsm.show_fundamental_operation_exception_message('We generate an empty data frame because of unexpected errors with dictionary list: ' + str(list_of_dictionary_data))
+    return result
+
+
 def generate_multi_row_dataframe_from_matrix(matrix, column_name_list):
     result = get_empty_data_frame()
     try:
