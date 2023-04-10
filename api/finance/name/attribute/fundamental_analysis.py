@@ -8,8 +8,20 @@ def get_asset():
     return 'Asset'
 
 
-def get_liability():
-    return 'Liability'
+def get_cash_and_cash_equivalent():
+    return 'Cash and Cash Equivalent'
+
+
+def get_total_liability():
+    return 'Total Liability'
+
+
+def get_short_term_liability():
+    return 'Short Term Liability'
+
+
+def get_long_term_liability():
+    return 'Long Term Liability'
 
 
 def get_equity():
@@ -30,6 +42,10 @@ def get_total_income():
 
 def get_net_income():
     return 'Net Income'
+
+
+def get_outstanding_share():
+    return 'Outstanding Share'
 
 
 def get_eps():
