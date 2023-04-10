@@ -20,13 +20,13 @@ def generate_one_row_dataframe_from_dictionary(index, dict_data):  # tested
     return result
 
 
-def generate_multi_row_dataframe_from_list_or_nested_dictionary(list_or_nested_dictionary_data):  # tested
+def generate_multi_row_dataframe_from_list_of_dictionary(list_of_dictionary_data):  # tested
     result = get_empty_data_frame()
     try:
-        if len(list_or_nested_dictionary_data) != 0:
-            result = pd.DataFrame(list_or_nested_dictionary_data)
+        if len(list_of_dictionary_data) != 0:
+            result = pd.DataFrame(list_of_dictionary_data)
     except:
-        acsm.show_fundamental_operation_exception_message('We generate an empty data frame because of unexpected errors with dictionary list: ' + str(list_or_nested_dictionary_data))
+        acsm.show_fundamental_operation_exception_message('We generate an empty data frame because of unexpected errors with dictionary list: ' + str(list_of_dictionary_data))
     return result
 
 

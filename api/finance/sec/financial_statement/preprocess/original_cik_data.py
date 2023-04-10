@@ -13,7 +13,7 @@ def __get_ticker_cik_dict():
 
 def __get_ticker_cik_df():
     ticker_cik_dict = __get_ticker_cik_dict()
-    ticker_cik_df = acdtop.generate_multi_row_dataframe_from_list_or_nested_dictionary(ticker_cik_dict)
+    ticker_cik_df = acdtop.generate_multi_row_dataframe_from_list_of_dictionary(ticker_cik_dict)
     ticker_cik_df = ticker_cik_df.T
     ticker_cik_df = acdtop.change_dataframe_column_name(ticker_cik_df, {'cik_str': afnafa.get_cik(), 'ticker': afnag.get_ticker(), 'title': afnag.get_company_name()})
     return ticker_cik_df
