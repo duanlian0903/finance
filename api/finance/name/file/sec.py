@@ -49,8 +49,8 @@ def get_given_cik_original_financial_statement_summary_json_file(cik):
     return get_sec_cik_financial_statement_folder() + '/' + str(cik) + '/original.json'
 
 
-def get_given_cik_modified_financial_statement_summary_json_file(cik):
-    return get_sec_cik_financial_statement_folder() + '/' + str(cik) + '/modified.json'
+def get_given_cik_unified_attribute_financial_statement_summary_json_file(cik):
+    return get_sec_cik_financial_statement_folder() + '/' + str(cik) + '/unified_attribute.json'
 
 
 def get_cik_original_financial_statement_update_process_json_file():

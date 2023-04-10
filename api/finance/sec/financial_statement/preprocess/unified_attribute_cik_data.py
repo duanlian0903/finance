@@ -26,7 +26,7 @@ def __get_tag_mapping_dict():
     }
 
 
-def __generate_given_cik_modified_financial_statement(cik):
+def __generate_given_cik_unified_attribute_financial_statement(cik):
     original_json = acdtof.load_json_file_as_dict(afnfs.get_given_cik_original_financial_statement_summary_json_file(cik))
     modified_json = {}
     tag_mapping_dict = __get_tag_mapping_dict()
@@ -36,10 +36,10 @@ def __generate_given_cik_modified_financial_statement(cik):
         for tag in tag_list:
             if tag in original_json:
                 modified_json[key] = acdtod.merge_dict(modified_json[key], original_json[tag])
-    acdtof.save_dict_as_json_file(modified_json, afnfs.get_given_cik_modified_financial_statement_summary_json_file(cik))
+    acdtof.save_dict_as_json_file(modified_json, afnfs.get_given_cik_unified_attribute_financial_statement_summary_json_file(cik))
 
 
-def generate_all_modified_financial_statement():
+def generate_all_unified_attribute_financial_statement():
     cik_list = get_existing_cik_list()
     for cik in cik_list:
-        __generate_given_cik_modified_financial_statement(cik)
+        __generate_given_cik_unified_attribute_financial_statement(cik)
