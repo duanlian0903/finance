@@ -54,6 +54,13 @@ def get_needed_datetime_with_day_interval(start_datetime, day_interval):
     return start_datetime + dt.timedelta(days=day_interval)
 
 
+def get_needed_datetime_with_month_interval(start_datetime, month_interval):
+    if start_datetime.month + month_interval > 12:
+        return dt.datetime(year=start_datetime.year + (start_datetime.month + month_interval)//12, month=(start_datetime.month + month_interval) % 12, day=start_datetime.day)
+    else:
+        return dt.datetime(year=start_datetime.year, month=start_datetime.month + month_interval, day=start_datetime.day)
+
+
 def get_needed_datetime_with_year_interval(start_datetime, year_interval):
     if (start_datetime.month == 2) & (start_datetime.day == 29):
         return dt.datetime(year=start_datetime.year + year_interval, month=start_datetime.month, day=start_datetime.day - 1)
