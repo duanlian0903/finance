@@ -5,4 +5,4 @@ import api.finance.sec.financial_statement.preprocess.modified_cik_data as afsfs
 
 afsfsrd.prepare_sec_raw_data()
 afsfspocd.get_original_cik_data()
-afsfspmcd.generate_all_unified_attribute_financial_statement()
+afsfspmcd.generate_all_modified_financial_statement_df()
