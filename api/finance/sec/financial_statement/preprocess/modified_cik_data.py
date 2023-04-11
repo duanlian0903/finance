@@ -1,6 +1,6 @@
 import api.common.data_type_operation.file as acdtof
 import api.common.data_type_operation.dict as acdtod
-import api.common.data_type_operation.pandas as acdtop
+import api.common.data_type_operation.pandas_numpy as acdtop
 import api.common.data_type_operation.number_string_boolean_bytes as acdtonsbb
 import api.common.data_type_operation.time as acdtot
 import api.finance.name.file.sec as afnfs
@@ -151,19 +151,20 @@ def __get_q1_filled_financial_statement_df(aligned_index_financial_statement_df)
 def __get_cleaned_financial_statement_df(q1_filled_financial_statement_df):
     time_interval_attribute_list = __get_time_interval_attribute_list()
     non_time_interval_attribute_list = __get_non_time_interval_attribute_list()
-    existing_non_time_interval_attribute_list = []
     for non_time_interval_attribute in non_time_interval_attribute_list:
-        if non_time_interval_attribute in q1_filled_financial_statement_df.columns:
-            existing_non_time_interval_attribute_list.append(non_time_interval_attribute)
-    cleaned_financial_statement_df = q1_filled_financial_statement_df[existing_non_time_interval_attribute_list]
+        if non_time_interval_attribute not in q1_filled_financial_statement_df.columns:
+            q1_filled_financial_statement_df[non_time_interval_attribute] = acdtonsbb.get_nan_value()
+    for time_interval_attribute in time_interval_attribute_list:
+        if time_interval_attribute + ' Q1' not in q1_filled_financial_statement_df.columns:
+            q1_filled_financial_statement_df[time_interval_attribute + ' Q1'] = acdtonsbb.get_nan_value()
+    cleaned_financial_statement_df = q1_filled_financial_statement_df[non_time_interval_attribute_list]
     rename_dict = {}
     selected_attribute_list = []
     for time_interval_attribute in time_interval_attribute_list:
-        if time_interval_attribute + ' Q1' in q1_filled_financial_statement_df.columns:
-            rename_dict[time_interval_attribute + ' Q1'] = time_interval_attribute
-            selected_attribute_list.append(time_interval_attribute + ' Q1')
+        rename_dict[time_interval_attribute + ' Q1'] = time_interval_attribute
+        selected_attribute_list.append(time_interval_attribute + ' Q1')
     cleaned_financial_statement_df = acdtop.combine_dataframe([cleaned_financial_statement_df, acdtop.change_dataframe_column_name(q1_filled_financial_statement_df[selected_attribute_list], rename_dict)], axis=1)
-    return cleaned_financial_statement_df
+    return cleaned_financial_statement_df[non_time_interval_attribute_list + time_interval_attribute_list]
 
 
 def __generate_given_cik_cleaned_attribute_financial_statement_df(cik):

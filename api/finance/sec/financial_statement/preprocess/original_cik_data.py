@@ -1,5 +1,5 @@
 import api.common.data_type_operation.file as acdtof
-import api.common.data_type_operation.pandas as acdtop
+import api.common.data_type_operation.pandas_numpy as acdtop
 import api.common.data_type_operation.dict as acdtod
 import api.common.system.message as acsm
 import api.finance.name.file.sec as afnfs

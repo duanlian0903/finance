@@ -1,5 +1,7 @@
 import pandas as pd
+import numpy as np
 import api.common.system.message as acsm
+import api.common.data_type_operation.number_string_boolean_bytes as acdtonsbb
 
 
 def get_empty_data_frame():  # tested
@@ -171,3 +173,14 @@ def get_appended_column_name_df(original_df, append_text):
         new_column_name_list.append(append_text + ' ' + column_name)
     original_df.columns = new_column_name_list
     return original_df
+
+
+def get_additional_columns_with_nan_value_df(original_df, additional_column_list):
+    for additional_column in additional_column_list:
+        original_df[additional_column] = acdtonsbb.get_nan_value()
+    return original_df
+
+
+def get_additional_column_with_given_value_list_df(original_df, additional_column_name, column_value_list):
+    additional_df = generate_multi_row_dataframe_from_matrix(column_value_list, [additional_column_name])
+    return combine_dataframe([original_df, additional_df], axis=1)
