@@ -42,7 +42,7 @@ def __get_quarterly_tag_df(year, quarter):
     return acdtop.get_df_from_csv_file(afnfs.get_sec_quarterly_tag_file(year, quarter), '\t')
 
 
-def get_related_ticker(cik_num, ticker_cik_df_with_cik_index=__get_ticker_cik_df_with_cik_index()):
+def get_related_ticker(cik_num, ticker_cik_df_with_cik_index):
     try:
         ticker = ticker_cik_df_with_cik_index.loc[cik_num, afnag.get_ticker()]
         if not isinstance(ticker, str):
@@ -53,7 +53,7 @@ def get_related_ticker(cik_num, ticker_cik_df_with_cik_index=__get_ticker_cik_df
         return None
 
 
-def get_related_cik(ticker_str, ticker_cik_df_with_ticker_index=__get_ticker_cik_df_with_ticker_index()):
+def get_related_cik(ticker_str, ticker_cik_df_with_ticker_index):
     try:
         cik = ticker_cik_df_with_ticker_index.loc[ticker_str, afnafa.get_cik()]
         return cik

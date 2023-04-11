@@ -12,5 +12,5 @@ def generate_sec_financial_statement():
 
 
 def get_financial_statement(ticker):
-    cik = afsfspocd.get_related_cik(ticker)
+    cik = afsfspocd.get_related_cik(ticker, afsfspocd.__get_ticker_cik_df_with_ticker_index())
     return acdtof.load_pickle_data(afnfs.get_given_cik_financial_statement_df_file(cik))
