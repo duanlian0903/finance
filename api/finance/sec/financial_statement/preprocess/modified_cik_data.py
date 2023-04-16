@@ -29,8 +29,8 @@ def __get_tag_mapping_dict():
         afnafa.get_operating_expense(): ['OperatingExpenses'],
         afnafa.get_operating_income(): ['OperatingIncomeLoss'],
         afnafa.get_net_income(): ['NetIncomeLoss'],
-        afnafa.get_eps(): ['BasicEarningsLossPerShare', 'EarningsPerShareBasic'],
-        afnafa.get_diluted_eps(): ['DilutedEarningsLossPerShare', 'EarningsPerShareDiluted']
+        afnafa.get_eps(): ['BasicEarningsLossPerShare', 'EarningsPerShareBasicAndDiluted', 'EarningsPerShareBasic'],
+        afnafa.get_diluted_eps(): ['DilutedEarningsLossPerShare', 'EarningsPerShareBasicAndDiluted', 'EarningsPerShareDiluted']
     }
 
 
