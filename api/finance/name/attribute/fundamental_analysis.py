@@ -24,8 +24,16 @@ def get_long_term_liability():
     return 'Long Term Liability'
 
 
+def get_long_term_debt():
+    return 'Long Term Debt'
+
+
 def get_equity():
     return 'Equity'
+
+
+def get_total_liability_and_equity():
+    return 'Total Liability and Equity'
 
 
 def get_revenue():

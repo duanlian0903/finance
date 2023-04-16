@@ -13,14 +13,16 @@ def get_existing_cik_list():
 
 def __get_tag_mapping_dict():
     return {
-        afnafa.get_asset(): ['Asset', 'Assets'],
+        afnafa.get_asset(): ['Assets'],
         afnafa.get_cash_and_cash_equivalent(): ['CashAndCashEquivalentsAtCarryingValue'],
         afnafa.get_total_liability(): ['Liabilities'],
         afnafa.get_short_term_liability(): ['LiabilitiesCurrent'],
         afnafa.get_long_term_liability(): ['LiabilitiesNoncurrent'],
+        afnafa.get_long_term_debt(): ['LongTermDebtCurrent'],
         afnafa.get_equity(): ['StockholdersEquity'],
+        afnafa.get_total_liability_and_equity(): ['LiabilitiesAndStockholdersEquity'],
         afnafa.get_outstanding_share(): ['CommonStockSharesOutstanding'],
-        afnafa.get_revenue(): ['RevenueFromContractWithCustomerExcludingAssessedTax', 'Revenue', 'Revenues'],
+        afnafa.get_revenue(): ['Revenues'],
         afnafa.get_expense(): ['CostOfGoodsAndServicesSold', 'CostsAndExpenses'],
         afnafa.get_total_income(): ['OperatingIncomeLoss', 'GrossProfit'],
         afnafa.get_net_income(): ['NetIncomeLoss'],
