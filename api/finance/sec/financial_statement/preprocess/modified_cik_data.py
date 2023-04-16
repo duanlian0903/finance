@@ -13,7 +13,7 @@ def get_existing_cik_list():
 
 def __get_tag_mapping_dict():
     return {
-        afnafa.get_asset(): ['Assets'],
+        afnafa.get_asset(): ['Asset', 'Assets'],
         afnafa.get_cash_and_cash_equivalent(): ['CashAndCashEquivalentsAtCarryingValue'],
         afnafa.get_total_liability(): ['Liabilities'],
         afnafa.get_short_term_liability(): ['LiabilitiesCurrent'],
@@ -22,9 +22,12 @@ def __get_tag_mapping_dict():
         afnafa.get_equity(): ['StockholdersEquity'],
         afnafa.get_total_liability_and_equity(): ['LiabilitiesAndStockholdersEquity'],
         afnafa.get_outstanding_share(): ['CommonStockSharesOutstanding'],
-        afnafa.get_revenue(): ['Revenues'],
-        afnafa.get_expense(): ['CostOfGoodsAndServicesSold', 'CostsAndExpenses'],
-        afnafa.get_total_income(): ['OperatingIncomeLoss', 'GrossProfit'],
+        afnafa.get_revenue(): ['RevenueFromContractWithCustomerExcludingAssessedTax', 'Revenue', 'Revenues'],
+        afnafa.get_total_expense(): ['CostsAndExpenses'],
+        afnafa.get_cost_of_goods_and_services_sold(): ['CostOfGoodsSold', 'CostOfGoodsAndServicesSold'],
+        afnafa.get_gross_profit(): ['GrossProfit'],
+        afnafa.get_operating_expense(): ['OperatingExpenses'],
+        afnafa.get_operating_income(): ['OperatingIncomeLoss'],
         afnafa.get_net_income(): ['NetIncomeLoss'],
         afnafa.get_eps(): ['BasicEarningsLossPerShare', 'EarningsPerShareBasic'],
         afnafa.get_diluted_eps(): ['DilutedEarningsLossPerShare', 'EarningsPerShareDiluted']
@@ -64,11 +67,15 @@ def __convert_date_string_into_datetime(date_string):
 
 
 def __get_non_time_interval_attribute_list():
-    return [afnafa.get_asset(), afnafa.get_cash_and_cash_equivalent(), afnafa.get_total_liability(), afnafa.get_short_term_liability(), afnafa.get_long_term_liability(), afnafa.get_equity(), afnafa.get_outstanding_share()]
+    return [afnafa.get_asset(), afnafa.get_cash_and_cash_equivalent(), afnafa.get_total_liability(),
+            afnafa.get_short_term_liability(), afnafa.get_long_term_liability(), afnafa.get_long_term_debt(),
+            afnafa.get_equity(), afnafa.get_total_liability_and_equity(), afnafa.get_outstanding_share()]
 
 
 def __get_time_interval_attribute_list():
-    return [afnafa.get_revenue(), afnafa.get_expense(), afnafa.get_total_income(), afnafa.get_net_income(), afnafa.get_eps(), afnafa.get_diluted_eps()]
+    return [afnafa.get_revenue(), afnafa.get_total_expense(), afnafa.get_cost_of_goods_and_services_sold(),
+            afnafa.get_gross_profit(), afnafa.get_operating_expense(), afnafa.get_operating_income(),
+            afnafa.get_net_income(), afnafa.get_eps(), afnafa.get_diluted_eps()]
 
 
 def __get_raw_financial_statement_df(unified_cik_dict):

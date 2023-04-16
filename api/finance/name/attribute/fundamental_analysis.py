@@ -40,12 +40,28 @@ def get_revenue():
     return 'Revenue'
 
 
-def get_expense():
-    return 'Expense'
+def get_total_expense():
+    # Cost of Goods and Services Sold + Operating Expenses
+    return 'Total Expense'
 
 
-def get_total_income():
-    return 'Total Income'
+def get_cost_of_goods_and_services_sold():
+    return 'Cost of Goods and Services Sold'
+
+
+def get_operating_expense():
+    return 'Operating Expense'
+
+
+def get_gross_profit():
+    # Revenue - Cost of Goods and Services Sold
+    return 'Gross Profit'
+
+
+def get_operating_income():
+    # Revenue - Total Expense
+    # Gross Profit - Operating Expenses
+    return 'Operating Income'
 
 
 def get_net_income():
