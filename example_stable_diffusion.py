@@ -1,7 +1,6 @@
 # you need to install package: keras-cv, matplotlib, and tensorflow
 import keras_cv
 import matplotlib.pyplot as plt
-import tkinter as tk
 
 
 def create_images(text_description, img_width=512, img_height=512, batch_size=3):
@@ -19,10 +18,17 @@ def plot_images(images):
     plt.show()
 
 
+description = 'central park, fantasy art, high quality, highly detailed, elegant, sharp focus, digital painting'
+created_images = create_images(description)
+plot_images(created_images)
+
+
+'''
 def show_image():
     plot_images(create_images(tb_description.get('1.0', tk.END), img_width=int(tb_width.get()), img_height=int(tb_height.get()), batch_size=int(tb_batch_size.get())))
 
 
+import tkinter as tk
 master = tk.Tk()
 master.geometry("300x180")
 master.title('Stable Diffusion Image')
@@ -44,3 +50,4 @@ tb_batch_size.insert(0, '3')
 tb_batch_size.grid(row=3, column=1, padx=3, pady=3)
 tk.Button(master, text='Submit', command=show_image).grid(row=4, column=1, padx=3, pady=3)
 master.mainloop()
+'''
