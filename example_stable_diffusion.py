@@ -18,6 +18,7 @@ def plot_images(images):
     plt.show()
 
 
+#''' remove the # sign to run a version with GUI.
 description = 'central park, fantasy art, high quality, highly detailed, elegant, sharp focus, digital painting'
 created_images = create_images(description)
 plot_images(created_images)
@@ -50,4 +51,4 @@ tb_batch_size.insert(0, '3')
 tb_batch_size.grid(row=3, column=1, padx=3, pady=3)
 tk.Button(master, text='Submit', command=show_image).grid(row=4, column=1, padx=3, pady=3)
 master.mainloop()
-'''
+#'''
