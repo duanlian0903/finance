@@ -1,0 +1,3 @@
+import api.finance.sec.financial_statement.generate_sec_financial_statement as afsfsgsfs
+
+afsfsgsfs.generate_sec_financial_statement()

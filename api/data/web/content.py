@@ -2,7 +2,7 @@ import requests
 
 
 def __get_requests_header():
-    return {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
+    return {'User-Agent': 'Hofstra University lian.duan@hofstra.edu', 'Accept-Encoding': 'gzip, deflate', 'Host': 'www.sec.gov'}
 
 
 def get_request(url, headers=__get_requests_header(), timeout=10):
